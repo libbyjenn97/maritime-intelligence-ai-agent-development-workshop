@@ -1,0 +1,199 @@
+openapi: 3.0.0
+info:
+  title: Weather Forecast Tool
+  description: Retrieves current weather and forecast for a location using coordinates
+  version: 1.0.0
+  contact:
+    name: Weather Forecast API
+    url: https://open-meteo.com
+
+servers:
+  - url: https://api.open-meteo.com/v1
+    description: Open-Meteo API Server
+
+paths:
+  /forecast:
+    get:
+      operationId: getWeatherForecast
+      summary: Get weather forecast
+      description: Retrieves current weather and forecast for a location using coordinates
+      parameters:
+        - name: latitude
+          in: query
+          required: true
+          description: Latitude coordinate (-90 to 90)
+          schema:
+            type: number
+            format: float
+            minimum: -90
+            maximum: 90
+          example: -41.2865
+        - name: longitude
+          in: query
+          required: true
+          description: Longitude coordinate (-180 to 180)
+          schema:
+            type: number
+            format: float
+            minimum: -180
+            maximum: 180
+          example: 174.7762
+        - name: forecast_days
+          in: query
+          required: false
+          description: Number of forecast days (1-16)
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 16
+            default: 7
+          example: 7
+        - name: current
+          in: query
+          required: false
+          description: Current weather variables to include
+          schema:
+            type: string
+            default: temperature_2m,relative_humidity_2m,weather_code
+          example: temperature_2m,relative_humidity_2m,weather_code
+        - name: daily
+          in: query
+          required: false
+          description: Daily forecast variables to include
+          schema:
+            type: string
+            default: temperature_2m_max,temperature_2m_min,precipitation_sum
+          example: temperature_2m_max,temperature_2m_min,precipitation_sum
+        - name: timezone
+          in: query
+          required: false
+          description: Timezone for the forecast
+          schema:
+            type: string
+            default: auto
+          example: Pacific/Auckland
+      responses:
+        '200':
+          description: Successful response with weather forecast data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  latitude:
+                    type: number
+                    description: Latitude of the location
+                  longitude:
+                    type: number
+                    description: Longitude of the location
+                  elevation:
+                    type: number
+                    description: Elevation in meters
+                  timezone:
+                    type: string
+                    description: Timezone of the location
+                  current:
+                    type: object
+                    description: Current weather conditions
+                    properties:
+                      time:
+                        type: string
+                        format: date-time
+                      temperature_2m:
+                        type: number
+                        description: Temperature at 2 meters height in Celsius
+                      relative_humidity_2m:
+                        type: number
+                        description: Relative humidity at 2 meters height in percentage
+                      weather_code:
+                        type: integer
+                        description: WMO weather code
+                  daily:
+                    type: object
+                    description: Daily forecast data
+                    properties:
+                      time:
+                        type: array
+                        items:
+                          type: string
+                          format: date
+                      temperature_2m_max:
+                        type: array
+                        items:
+                          type: number
+                        description: Maximum daily temperature in Celsius
+                      temperature_2m_min:
+                        type: array
+                        items:
+                          type: number
+                        description: Minimum daily temperature in Celsius
+                      precipitation_sum:
+                        type: array
+                        items:
+                          type: number
+                        description: Total daily precipitation in mm
+              example:
+                latitude: -41.2865
+                longitude: 174.7762
+                elevation: 12.0
+                timezone: Pacific/Auckland
+                current:
+                  time: "2026-05-07T17:00"
+                  temperature_2m: 15.2
+                  relative_humidity_2m: 78
+                  weather_code: 3
+                daily:
+                  time: ["2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13"]
+                  temperature_2m_max: [18.5, 19.2, 17.8, 16.5, 18.0, 19.5, 20.1]
+                  temperature_2m_min: [12.3, 13.1, 11.8, 10.5, 12.0, 13.5, 14.1]
+                  precipitation_sum: [2.5, 0.0, 5.2, 8.1, 1.0, 0.0, 0.5]
+        '400':
+          description: Bad request - Invalid parameters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: boolean
+                  reason:
+                    type: string
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: boolean
+                  reason:
+                    type: string
+
+components:
+  schemas:
+    WeatherForecast:
+      type: object
+      description: Weather forecast response object
+
+x-watsonx-orchestrate:
+  kind: openapi
+  tool_name: getWeatherForecast
+  description: Retrieves current weather and forecast for a location using coordinates
+  example_usage: |
+    Example 1: Get 7-day forecast for Wellington, New Zealand
+    - latitude: -41.2865
+    - longitude: 174.7762
+    - forecast_days: 7
+    
+    Example 2: Get 3-day forecast for Auckland, New Zealand
+    - latitude: -36.8485
+    - longitude: 174.7633
+    - forecast_days: 3
+    
+    Example 3: Get 14-day forecast for Christchurch, New Zealand
+    - latitude: -43.5321
+    - longitude: 172.6362
+    - forecast_days: 14
+
+# Made with Bob
