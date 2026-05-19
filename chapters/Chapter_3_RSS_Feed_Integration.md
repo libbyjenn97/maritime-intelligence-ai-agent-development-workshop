@@ -1,4 +1,4 @@
-# Chapter 3: Advanced Analysis with Langflow
+# Chapter 3: RSS Feed Integration with Langflow
 
 **Time:** 2:30 PM - 3:15 PM (45 minutes)  
 **Goal:** Build a Langflow workflow that extracts structured maritime incidents from RSS feeds  
