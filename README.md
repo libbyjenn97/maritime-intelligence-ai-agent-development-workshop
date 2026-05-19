@@ -76,6 +76,38 @@ By the end of this workshop, you will:
 
 ---
 
+### Chapter 3: Advanced Analysis with Langflow
+**Time:** 2:30 PM - 3:15 PM (45 min)
+**Goal:** Build visual workflows for maritime intelligence
+
+**What you'll do:**
+- Create a Langflow pipeline with visual blocks
+- Pull live RSS feeds with Python Interpreter
+- Extract structured maritime incidents using AI
+- Return JSON data for downstream workflows
+
+**Key takeaway:** *"Visual workflows turn RSS feeds into structured intelligence"*
+
+📄 **[Go to Chapter 3 Guide →](./chapters/Chapter_3_Langflow_Advanced_Analysis.md)**
+
+---
+
+### Chapter 4: Visualisation with Bob
+**Time:** 3:15 PM - 3:30 PM (15 min)
+**Goal:** Generate dashboards and visualisations
+
+**What you'll do:**
+- Prompt Bob to create interactive maps
+- Generate intelligence dashboards with Plotly
+- Create visual decision support outputs
+- Export visualisations for reporting
+
+**Key takeaway:** *"Bob generates production-ready visualisations in minutes"*
+
+📄 **[Go to Chapter 4 Guide →](./chapters/Chapter_4_Visualisation_with_Bob.md)**
+
+---
+
 ## 🛠️ Technical Requirements
 
 ### Pre-Workshop Setup
