@@ -106,7 +106,7 @@
 ### Stuck on a step?
 1. Re-read the instruction
 2. Check the troubleshooting section
-3. Ask your neighbor
+3. Ask your neighbour
 4. Raise your hand for help
 
 ---
@@ -209,7 +209,7 @@ You'll know you're successful if:
 
 ### During Workshop
 1. **Raise your hand** - Instructors are here to help
-2. **Ask your neighbor** - Peer learning works!
+2. **Ask your neighbour** - Peer learning works!
 3. **Check troubleshooting** - In each chapter guide
 
 ---

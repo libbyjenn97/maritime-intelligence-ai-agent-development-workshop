@@ -72,7 +72,7 @@ Also create:
 
 **Test the map:**
 - Load sample incident data
-- Verify color coding
+- Verify colour coding
 - Test hover interactions
 - Check zoom/pan controls
 
@@ -90,7 +90,7 @@ Also create:
 Create a dashboard using Plotly Dash that displays:
 
 Components:
-1. Risk heat map by region (color-coded grid)
+1. Risk heat map by region (colour-coded grid)
 2. Trend chart showing incidents over time (line chart)
 3. Threat type distribution (pie chart)
 4. Key metrics summary cards:
@@ -103,7 +103,7 @@ Components:
 Requirements:
 - Responsive layout for different screens
 - Auto-refresh every 5 minutes
-- Dark theme for operations center
+- Dark theme for operations centre
 - Export to PDF button
 - Print-friendly layout
 - Professional military styling
@@ -179,7 +179,7 @@ Also create:
 **With Bob:**
 - Prompt for map: 2 minutes
 - Prompt for dashboard: 2 minutes
-- Review and customize: 5 minutes
+- Review and customise: 5 minutes
 - Test: 3 minutes
 - Export: 3 minutes
 - **Total: 15 minutes**

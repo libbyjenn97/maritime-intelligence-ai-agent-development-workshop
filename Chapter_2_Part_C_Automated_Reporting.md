@@ -161,7 +161,7 @@ Instructions for:
 **With Bob:**
 - Prompt Bob for reports: 5 minutes
 - Prompt Bob for alerts: 5 minutes
-- Review and customize: 10 minutes
+- Review and customise: 10 minutes
 - Test: 5 minutes
 - **Total: 25 minutes**
 

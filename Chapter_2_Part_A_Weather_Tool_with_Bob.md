@@ -113,7 +113,7 @@ Before we start generating code, let's create a dedicated folder for all worksho
 **What this creates:**
 - Location: `Documents/NZDF_Agentic_AI_Workshop/`
 - Purpose: Store all code, configurations, and files from the workshop
-- Structure: We'll organize files by chapter as we progress
+- Structure: We'll organise files by chapter as we progress
 
 **You should now see:**
 - Bob's file explorer showing your new workshop folder
@@ -135,7 +135,7 @@ Before we start, make sure you're in **Code mode** (💻) in Bob. This mode is o
 
 ![Bob Code mode selection](images/chapter-2/code-mode.png)
 
-**Note:** Your Bob interface may show different available modes than the screenshot above, depending on your configuration and version. Look for the mode with the code/programming icon (💻) or labeled "Code".
+**Note:** Your Bob interface may show different available modes than the screenshot above, depending on your configuration and version. Look for the mode with the code/programming icon (💻) or labelled "Code".
 
 #### Prompt 1: Generate the Python Tool
 
@@ -239,7 +239,7 @@ Format as OpenAPI 3.0 specification YAML.
 
 **What Bob will generate:**
 
-**Note:** In this example, Bob goes straight to creating the YAML file without creating a planning TODO list first. This is normal behavior - remember, Bob's LLM is non-deterministic and may skip the planning phase for simpler tasks.
+**Note:** In this example, Bob goes straight to creating the YAML file without creating a planning TODO list first. This is normal behaviour - remember, Bob's LLM is non-deterministic and may skip the planning phase for simpler tasks.
 
 Bob should create a YAML file with:
 - OpenAPI specification
@@ -675,7 +675,7 @@ Time to see Bob's creation in action!
 What's the current weather in Wellington?
 ```
 
-**Expected behavior:**
+**Expected behaviour:**
 - ✅ Agent converts "Wellington" to coordinates (-41.2865, 174.7762)
 - ✅ Calls getWeatherForecast tool
 - ✅ Returns current temperature, wind, conditions
@@ -699,7 +699,7 @@ Operational Assessment: SAFE - Moderate winds, good visibility
 Give me a 7-day forecast for Auckland
 ```
 
-**Expected behavior:**
+**Expected behaviour:**
 - ✅ Agent converts "Auckland" to coordinates
 - ✅ Returns daily forecast
 - ✅ Includes max/min temps, precipitation, wind
@@ -711,8 +711,8 @@ Give me a 7-day forecast for Auckland
 Is it safe to operate vessels near Wellington today?
 ```
 
-**Expected behavior:**
-- ✅ Agent analyzes weather data
+**Expected behaviour:**
+- ✅ Agent analyses weather data
 - ✅ Provides safety assessment
 - ✅ Gives operational recommendations
 - ✅ Highlights any hazards
@@ -855,7 +855,7 @@ If the first output isn't perfect:
 ```
 "Bob, can you modify the code to also include [new requirement]?"
 "Bob, add better error messages for [scenario]"
-"Bob, optimize this for [specific use case]"
+"Bob, optimise this for [specific use case]"
 ```
 
 ---
