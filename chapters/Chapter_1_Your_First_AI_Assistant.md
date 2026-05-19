@@ -2,8 +2,6 @@
 
 **Time:** 11:45 AM - 12:15 PM (30 minutes)
 **Goal:** Get comfortable with watsonx Orchestrate through a simple, immediate use case
-**Difficulty:** Beginner
-**Prerequisites:** Completed [Chapter 0: Environment Setup](./Chapter_0_Environment_Setup.md)
 
 ---
 

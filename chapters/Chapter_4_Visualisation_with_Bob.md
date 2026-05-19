@@ -2,9 +2,6 @@
 
 **Time:** 3:15 PM - 3:30 PM (15 minutes)
 **Goal:** Rapid visualisation generation with AI
-**Difficulty:** Beginner-Intermediate
-**Prerequisites:** Completed Chapter 2, IBM Bob access  
-**Authors:** [TO BE ASSIGNED]
 
 ---
 

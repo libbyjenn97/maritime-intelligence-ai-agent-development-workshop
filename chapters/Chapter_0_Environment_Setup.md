@@ -1,9 +1,7 @@
 # Chapter 0: Environment Setup
 
-**Time:** Pre-workshop (15-20 minutes)  
-**Goal:** Set up your IBM Cloud environment and access credentials  
-**Difficulty:** Beginner  
-**Prerequisites:** None
+**Time:** Pre-workshop (15-20 minutes)
+**Goal:** Set up your IBM Cloud environment and access credentials
 
 ---
 

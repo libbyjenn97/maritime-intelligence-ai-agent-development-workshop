@@ -1,9 +1,7 @@
 # Chapter 2 Part A: Weather Tool with IBM Bob
 
-**Time:** 1:00 PM - 1:25 PM (25 minutes)  
-**Goal:** Use IBM Bob to generate a complete weather intelligence tool  
-**Difficulty:** Intermediate  
-**Prerequisites:** Completed Chapter 1, IBM Bob access
+**Time:** 1:00 PM - 1:25 PM (25 minutes)
+**Goal:** Use IBM Bob to generate a complete weather intelligence tool
 
 ---
 

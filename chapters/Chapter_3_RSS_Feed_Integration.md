@@ -1,10 +1,7 @@
 # Chapter 3: RSS Feed Integration with Langflow
 
-**Time:** 2:30 PM - 3:15 PM (45 minutes)  
-**Goal:** Build a Langflow workflow that extracts structured maritime incidents from RSS feeds  
-**Difficulty:** Intermediate  
-**Prerequisites:** Completed Chapter 2, Langflow access, Chapter 0 environment setup  
-**Authors:** Ethan Samuels
+**Time:** 2:30 PM - 3:15 PM (45 minutes)
+**Goal:** Build a Langflow workflow that extracts structured maritime incidents from RSS feeds
 
 ---
 
@@ -22,7 +19,7 @@ By the end of this chapter, you will:
 
 ## 📖 What We're Building
 
-A Langflow analysis flow that reads a maritime RSS feed and transforms it into structured incident data for later use in watsonx Orchestrate, reporting, or visualisation.
+A Langflow workflow that reads a maritime RSS feed and transforms it into structured incident data for later use in watsonx Orchestrate, reporting, or visualisation.
 
 ### Block sequence
 
