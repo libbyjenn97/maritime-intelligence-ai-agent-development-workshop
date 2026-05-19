@@ -963,4 +963,4 @@ Complete Maritime Intelligence System
 
 ---
 
-[← Back to Chapter 1](./Chapter_1_Your_First_AI_Assistant.md) | [Back to Main Guide](../README.md) | [Next: Chapter 3 →](./Chapter_3_Langflow_Advanced_Analysis.md)
+[← Back to Chapter 1](./Chapter_1_Your_First_AI_Assistant.md) | [Back to Main Guide](../README.md) | [Next: Chapter 3 →](./Chapter_3_RSS_Feed_Integration.md)
