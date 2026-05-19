@@ -254,14 +254,6 @@ Run the flow and verify the following:
 - The Agent returns valid JSON
 - The Chat Output displays extracted incident data
 
-### Good test indicators
-
-- Maritime incident titles appear in the JSON
-- Incident types are classified into the allowed categories
-- Missing values are `null` or empty only where appropriate
-- Image URLs are direct links, not logos or trackers
-- Multiple incidents return as an array
-
 ---
 
 ## 🔗 Step 8: Connect Langflow to watsonx Orchestrate
