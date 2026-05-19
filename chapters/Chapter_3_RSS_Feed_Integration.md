@@ -78,14 +78,6 @@ This creates a linear extraction pipeline from RSS collection through to final s
    - **Chat Output**
 4. Arrange them left to right so the flow is easy to follow
 
-Recommended layout:
-
-- Left: **Python Interpreter**
-- Mid-left: **Type Convert**
-- Centre: **Prompt Template**
-- Mid-right: **Agent**
-- Right: **Chat Output**
-
 ---
 
 ## 🐍 Step 2: Configure the Python Interpreter Block
