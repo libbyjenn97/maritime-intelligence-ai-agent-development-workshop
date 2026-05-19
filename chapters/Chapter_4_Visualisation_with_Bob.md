@@ -282,4 +282,4 @@ After the afternoon break:
 
 ---
 
-[← Back to Chapter 2 Part C](./Chapter_2_Part_C_Automated_Reporting.md) | [Back to Main Guide](./README.md)
+[← Back to Chapter 3](./Chapter_3_Langflow_Advanced_Analysis.md) | [Back to Main Guide](../README.md)

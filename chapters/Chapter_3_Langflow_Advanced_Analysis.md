@@ -174,4 +174,4 @@ You've successfully completed Part B if:
 
 ---
 
-[← Back to Part A](./Chapter_2_Part_A_Weather_Tool_with_Bob.md) | [Next: Part C →](./Chapter_2_Part_C_Automated_Reporting.md)
+[← Back to Chapter 2](./Chapter_2_Document_Analysis_Agent.md) | [Back to Main Guide](../README.md) | [Next: Chapter 4 →](./Chapter_4_Visualisation_with_Bob.md)

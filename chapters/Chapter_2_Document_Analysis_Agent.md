@@ -74,13 +74,13 @@ A weather intelligence tool that:
    - Launch Bob from your applications menu or desktop shortcut
    - You should see the Bob interface ready to assist
 
-   ![Bob start screen](images/chapter-2/bob-start.png)
+   ![Bob start screen](./images/chapter-2/bob-start.png)
 
 #### 1.3 Verify Bob is ready
    - Test with: "Hello Bob, are you ready to help me code?"
    - Bob should respond confirming it's ready to assist
 
-   ![Bob hello response](images/chapter-2/bob-hello.png)
+   ![Bob hello response](./images/chapter-2/bob-hello.png)
 
 **Bob's Key Capabilities:**
 - Code generation in multiple languages
@@ -102,11 +102,11 @@ Before we start generating code, let's create a dedicated folder for all worksho
    - Right-click in the Documents folder
    - Select "New Folder" (or equivalent for your OS)
    
-   ![Creating a new folder](images/chapter-2/create-folder.png)
+   ![Creating a new folder](./images/chapter-2/create-folder.png)
    
    - Name it: `NZDF_Agentic_AI_Workshop`
    
-   ![Folder created](images/chapter-2/folder-created.png)
+   ![Folder created](./images/chapter-2/folder-created.png)
 
 4. Open this folder in Bob by selecting it and clicking "Open"
 
@@ -133,7 +133,7 @@ Before we start, make sure you're in **Code mode** (💻) in Bob. This mode is o
 - Select **"💻 Code"** mode
 - This ensures Bob provides production-ready code with proper structure
 
-![Bob Code mode selection](images/chapter-2/code-mode.png)
+![Bob Code mode selection](./images/chapter-2/code-mode.png)
 
 **Note:** Your Bob interface may show different available modes than the screenshot above, depending on your configuration and version. Look for the mode with the code/programming icon (💻) or labelled "Code".
 
@@ -169,17 +169,17 @@ Also include:
 - Comments explaining key sections
 ```
 
-![Entering the prompt in Bob](images/chapter-2/enter-prompt-bob.png)
+![Entering the prompt in Bob](./images/chapter-2/enter-prompt-bob.png)
 
 **What Bob will generate:**
 
-![Bob creating the Python weather tool](images/chapter-2/create-weather-python-tool.png)
+![Bob creating the Python weather tool](./images/chapter-2/create-weather-python-tool.png)
 
 **Bob's Planning Process:**
 
 Bob will typically start by creating a TODO list to plan the implementation:
 
-![Bob's TODO list for weather tool](images/chapter-2/weather-todo-list.png)
+![Bob's TODO list for weather tool](./images/chapter-2/weather-todo-list.png)
 
 **Next Step:** Click **"Approve"** to let Bob walk you through the Python tool creation process. Bob will work through each item in the TODO list, creating the complete weather tool code. Simply follow the prompts that appear from Bob in the chat.
 
@@ -196,7 +196,7 @@ All approaches are valid! The key is that Bob generates the complete, working Py
 - Type hints and comprehensive documentation
 - Clean, production-ready code
 
-![Example Python weather tool created by Bob](images/chapter-2/weather-forecast-tool-created.png)
+![Example Python weather tool created by Bob](./images/chapter-2/weather-forecast-tool-created.png)
 
 **Review the code Bob generates:**
 - Check the function signature
@@ -214,7 +214,7 @@ Before generating the YAML configuration, start a new task in Bob to keep the wo
 - Click the **"New Task"** button or use the keyboard shortcut
 - This ensures Bob focuses on the YAML generation without mixing contexts
 
-![Starting a new task in Bob](images/chapter-2/start-new-task-prompt2.png)
+![Starting a new task in Bob](./images/chapter-2/start-new-task-prompt2.png)
 
 **Copy and paste this prompt to Bob:**
 
@@ -247,7 +247,7 @@ Bob should create a YAML file with:
 - Example requests and responses
 - Clear documentation
 
-![Bob creating YAML file and prompting to save](images/chapter-2/prompt2-save.png)
+![Bob creating YAML file and prompting to save](./images/chapter-2/prompt2-save.png)
 
 **Save the files:**
 
@@ -322,13 +322,13 @@ Before importing tools, you need to configure your ADK environment to connect to
    - Click your user icon on the top right
    - Click **Settings**
 
-   ![User settings in IBM Cloud](images/chapter-2/user_settings_ibm_cloud.png)
+   ![User settings in IBM Cloud](./images/chapter-2/user_settings_ibm_cloud.png)
 
 3. **Go to the API details tab**
 
 4. **Copy the service instance URL:**
 
-   ![IBM Cloud credentials](images/chapter-2/ibmcloud_credentials.png)
+   ![IBM Cloud credentials](./images/chapter-2/ibmcloud_credentials.png)
 
 5. **Get your API key:**
    - Use the API key you generated earlier in Chapter 0, Step 5
@@ -483,7 +483,7 @@ paths:
    
    You should see your newly imported weather tool:
    
-   ![Weather forecast tool in Orchestrate](images/chapter-2/get-weather-forecast-tool.png)
+   ![Weather forecast tool in Orchestrate](./images/chapter-2/get-weather-forecast-tool.png)
    
    The tool should show:
    - **Name:** getWeatherForecast
@@ -631,7 +631,7 @@ Existing Agent 'maritime_weather_agent' found. Updating...
 
 3. **Select "Build"** from the menu
 
-   ![Verify agent in Build menu](images/chapter-2/verify-agent.png)
+   ![Verify agent in Build menu](./images/chapter-2/verify-agent.png)
 
 4. **Select the `maritime_weather_agent`** from the agents list
 
@@ -639,7 +639,7 @@ Existing Agent 'maritime_weather_agent' found. Updating...
 
 6. **Verify that the instructions have been updated** with the weather code interpretation rules
 
-   ![Verify behaviour updated](images/chapter-2/verify-behaviour.png)
+   ![Verify behaviour updated](./images/chapter-2/verify-behaviour.png)
 
 You should see the agent instructions including:
 - City coordinate mappings
@@ -963,4 +963,4 @@ Complete Maritime Intelligence System
 
 ---
 
-[← Back to Chapter 1](./Chapter_1_Your_First_AI_Assistant.md) | [Back to Main Guide](./README.md) | [Next: Part B →](./Chapter_2_Part_B_News_Integration.md)
+[← Back to Chapter 1](./Chapter_1_Your_First_AI_Assistant.md) | [Back to Main Guide](../README.md) | [Next: Chapter 3 →](./Chapter_3_Langflow_Advanced_Analysis.md)

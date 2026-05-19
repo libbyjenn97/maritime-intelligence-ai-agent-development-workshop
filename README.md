@@ -29,13 +29,16 @@ By the end of this workshop, you will:
 
 | Time | Duration | Chapter | Description |
 |------|----------|---------|-------------|
-| 10:00 - 11:45 | 1h 45min | **Setup & Concepts** | Introductions, technical setup, agentic AI fundamentals |
-| **11:45 - 12:15** | **30 min** | **[Chapter 1: Your First AI Assistant](#chapter-1)** | Simple document Q&A with Orchestrate |
-| 12:15 - 1:00 | 45 min | **LUNCH BREAK** | Break |
-| **1:00 - 2:15** | **75 min** | **[Chapter 2: Document Analysis Agent](#chapter-2)** | Build weather tool with Bob |
-| 2:15 - 2:30 | 15 min | **AFTERNOON BREAK** | Break |
-| 2:30 - 3:15 | 45 min | **Chapter 3: Advanced Analysis** | Langflow integration |
-| 3:15 - 3:30 | 15 min | **Chapter 4: Visualization** | Bob-generated dashboards |
+| 10:00 - 10:15 | 15 min | **Introductions** | Introductions & name tags |
+| 10:15 - 10:45 | 30 min | **Agenda & Use Cases** | Workshop agenda, objectives, and maritime intelligence use cases |
+| 10:45 - 11:15 | 30 min | **[Chapter 0: Environment Setup](./chapters/Chapter_0_Environment_Setup.md)** | Technical setup (Orchestrate, Langflow, Bob) |
+| 11:15 - 11:45 | 30 min | **Agentic AI Concepts** | Core concepts and capabilities |
+| **11:45 - 12:15** | **30 min** | **[Chapter 1: Your First AI Assistant](./chapters/Chapter_1_Your_First_AI_Assistant.md)** | Simple document Q&A with Orchestrate |
+| 12:15 - 1:00 | 45 min | **Lunch break** | Break |
+| **1:00 - 2:15** | **75 min** | **[Chapter 2: Document Analysis Agent](./chapters/Chapter_2_Document_Analysis_Agent.md)** | Build weather tool with Bob |
+| 2:15 - 2:30 | 15 min | **Afternoon break** | Break |
+| 2:30 - 3:15 | 45 min | **[Chapter 3: Advanced Analysis](./chapters/Chapter_3_Langflow_Advanced_Analysis.md)** | Langflow integration |
+| 3:15 - 3:30 | 15 min | **[Chapter 4: Visualisation](./chapters/Chapter_4_Visualisation_with_Bob.md)** | Bob-generated dashboards |
 | 3:30 - 4:30 | 1h | **Wrap-up & Planning** | Pressure test, discovery workshop |
 
 ---
@@ -54,15 +57,14 @@ By the end of this workshop, you will:
 
 **Key takeaway:** *"Great for one document, but what about 50 reports daily?"*
 
-📄 **[Go to Chapter 1 Guide →](./Chapter_1_Your_First_AI_Assistant.md)**
+📄 **[Go to Chapter 1 Guide →](./chapters/Chapter_1_Your_First_AI_Assistant.md)**
 
 ---
 
 ### Chapter 2: Document Analysis Agent with IBM Bob
-**Time:** 1:00 PM - 2:15 PM (75 min)  
+**Time:** 1:00 PM - 2:15 PM (75 min)
 **Innovation:** Bob generates everything!
 
-#### Part A: Weather Tool with Bob (25 min)
 **What you'll do:**
 - Prompt Bob to generate Python weather tool
 - Bob creates YAML configuration
@@ -70,7 +72,7 @@ By the end of this workshop, you will:
 
 **Key takeaway:** *"AI-accelerated development - what took hours now takes minutes"*
 
-📄 **[Go to Chapter 2 Part A Guide →](./Chapter_2_Part_A_Weather_Tool_with_Bob.md)**
+📄 **[Go to Chapter 2 Guide →](./chapters/Chapter_2_Document_Analysis_Agent.md)**
 
 ---
 
@@ -92,17 +94,17 @@ By the end of this workshop, you will:
 ## 📁 Repository Structure
 
 ```
-GitHub_Bootcamp_Guide/
+maritime-intelligence-ai-agent-development-workshop/
 ├── README.md                                    # This file
-├── Chapter_1_Your_First_AI_Assistant.md        # Chapter 1 guide
-├── Chapter_2_Part_A_Weather_Tool_with_Bob.md   # Chapter 2 Part A guide
-├── assets/                                      # Screenshots and images
-├── sample_data/                                 # Sample datasets
-│   └── ONI_Sample_Report.pdf
-└── reference/                                   # Additional resources
-    ├── API_Keys_Setup.md
-    ├── Troubleshooting.md
-    └── Quick_Reference.md
+├── chapters/                                    # Workshop chapters
+│   ├── Chapter_0_Environment_Setup.md          # Environment setup
+│   ├── Chapter_1_Your_First_AI_Assistant.md    # Chapter 1 guide
+│   ├── Chapter_2_Document_Analysis_Agent.md    # Chapter 2 guide
+│   ├── Chapter_3_Langflow_Advanced_Analysis.md # Chapter 3 guide
+│   ├── Chapter_4_Visualisation_with_Bob.md     # Chapter 4 guide
+│   ├── assets/                                  # Sample data and files
+│   └── images/                                  # Screenshots and images
+└── reference/                                   # Additional resources (if needed)
 ```
 
 ---

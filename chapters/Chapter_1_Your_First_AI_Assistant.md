@@ -41,21 +41,21 @@ Step-by-step instructions:
 
 3. Select your **watsonx Orchestrate** instance.
 
-   ![Select watsonx Orchestrate instance](images/chapter-1/wxo-instance.png)
+   ![Select watsonx Orchestrate instance](./images/chapter-1/wxo-instance.png)
 
 4. Click **"Launch watsonx Orchestrate"**.
 
-   ![Launch watsonx Orchestrate](images/chapter-1/launch-wxo.png)
+   ![Launch watsonx Orchestrate](./images/chapter-1/launch-wxo.png)
 
 5. This will open the watsonx Orchestrate homepage in your browser.
 
 6. Click on **"Create new agent"**, as shown below:
 
-   ![Create new agent from the watsonx Orchestrate homepage](images/chapter-1/create.png)
+   ![Create new agent from the watsonx Orchestrate homepage](./images/chapter-1/create.png)
 
 7. Select the **"Create from scratch"** tab.
 
-   ![Create from scratch tab](images/chapter-1/create-from-scratch.png)
+   ![Create from scratch tab](./images/chapter-1/create-from-scratch.png)
 
 8. Give your agent a name. Enter:
 
@@ -71,11 +71,11 @@ Step-by-step instructions:
 
 10. Click the **"Create"** button to create your agent.
 
-    ![Click Create button](images/chapter-1/create-an-agent-create-button.png)
+    ![Click Create button](./images/chapter-1/create-an-agent-create-button.png)
 
 **🎉 Congratulations!** You've just created your first AI agent! Your Maritime Intelligence Assistant is now ready to be configured.
 
-![Your first agent created](images/chapter-1/created-first-agent.png)
+![Your first agent created](./images/chapter-1/created-first-agent.png)
 
 ---
 
@@ -100,7 +100,7 @@ Step-by-step instructions:
 
 A sample ONI Worldwide Threat to Shipping report is included in this repository for practice:
 
-- **File location:** [`assets/ONI_WTS_Sample_Report.pdf`](assets/ONI_WTS_Sample_Report.pdf)
+- **File location:** [`assets/chapter-1/ONI_WTS_Sample_Report.pdf`](./assets/chapter-1/ONI_WTS_Sample_Report.pdf)
 - **Date:** August 4, 2026
 - Download this file to your computer to use in the next step
 
@@ -112,23 +112,23 @@ A sample ONI Worldwide Threat to Shipping report is included in this repository 
 
 2. **Go to the Knowledge section** by selecting "Knowledge" on the left panel or by scrolling down to the section.
 
-   ![Knowledge section](images/chapter-1/knowledge-section.png)
+   ![Knowledge section](./images/chapter-1/knowledge-section.png)
 
 3. **Click "Add source"**, then select **"New knowledge"**.
 
-   ![Add source - New knowledge](images/chapter-1/add-knowledge-new.png)
+   ![Add source - New knowledge](./images/chapter-1/add-knowledge-new.png)
 
 4. **Scroll down and select "Upload files"**, then click the **Next** button.
 
-   ![Upload files and Next button](images/chapter-1/upload-files-next.png)
+   ![Upload files and Next button](./images/chapter-1/upload-files-next.png)
 
 5. **Drag and drop your ONI report PDF onto the page, or click to upload and locate your file.**
 
-   ![Drag and drop or click to upload](images/chapter-1/drag-drop.png)
+   ![Drag and drop or click to upload](./images/chapter-1/drag-drop.png)
 
 6. **Click the Next button** to proceed.
 
-   ![Click Next to upload knowledge](images/chapter-1/upload-knowledge-next.png)
+   ![Click Next to upload knowledge](./images/chapter-1/upload-knowledge-next.png)
 
 7. **Add a Name and Description for your knowledge source:**
 
@@ -146,7 +146,7 @@ A sample ONI Worldwide Threat to Shipping report is included in this repository 
 
 8. **Click the Save button** to save your knowledge source.
 
-   ![Click Save button](images/chapter-1/knowledge-details-save.png)
+   ![Click Save button](./images/chapter-1/knowledge-details-save.png)
 
 9. **Wait for processing:**
    - You'll see a progress indicator
@@ -161,7 +161,7 @@ Now the fun part - let's ask questions!
 
 1. **Click into the "type something..." section** in the bottom right of the screen to open the chat interface.
 
-   ![Type something chat input](images/chapter-1/type-something.png)
+   ![Type something chat input](./images/chapter-1/type-something.png)
 
 2. **Test Query 1: General Overview**
 
@@ -170,7 +170,7 @@ Now the fun part - let's ask questions!
    What are the main threats reported in this document?
    ```
 
-   ![Example query about main threats](images/chapter-1/main-threat-reports.png)
+   ![Example query about main threats](./images/chapter-1/main-threat-reports.png)
 
    **What to observe:**
    - ✅ Agent reads the document
@@ -201,7 +201,7 @@ Now the fun part - let's ask questions!
 
    After receiving the response, **click "Show reasoning"** to see how the agent used your knowledge source to answer the question.
 
-   ![Show reasoning to see knowledge source usage](images/chapter-1/show-reasoning-main-threats.png)
+   ![Show reasoning to see knowledge source usage](./images/chapter-1/show-reasoning-main-threats.png)
 
    This reveals:
    - Which knowledge source(s) the agent consulted
@@ -217,7 +217,7 @@ Now the fun part - let's ask questions!
    Are there any incidents near Somalia?
    ```
 
-   ![Example query about Somalia incidents](images/chapter-1/somalia-incidents.png)
+   ![Example query about Somalia incidents](./images/chapter-1/somalia-incidents.png)
 
    **What to observe:**
    - ✅ Agent searches for Somalia-related incidents
@@ -252,7 +252,7 @@ Now the fun part - let's ask questions!
    What types of vessels were targeted?
    ```
 
-   ![Example query about vessel types](images/chapter-1/vessels.png)
+   ![Example query about vessel types](./images/chapter-1/vessels.png)
 
    **What to observe:**
    - ✅ Agent identifies vessel types (cargo, tanker, etc.)
@@ -266,7 +266,7 @@ Now the fun part - let's ask questions!
    Summarize the piracy incidents
    ```
 
-   ![Example query about piracy incidents](images/chapter-1/piracy-incidents.png)
+   ![Example query about piracy incidents](./images/chapter-1/piracy-incidents.png)
 
    **What to observe:**
    - ✅ Agent filters for piracy-specific incidents
@@ -280,7 +280,7 @@ Now the fun part - let's ask questions!
    What regions have the highest threat levels?
    ```
 
-   ![Example query about threat levels by region](images/chapter-1/threat-levels.png)
+   ![Example query about threat levels by region](./images/chapter-1/threat-levels.png)
 
    **What to observe:**
    - ✅ Agent analyzes incident distribution
@@ -480,4 +480,4 @@ After lunch, we'll use IBM Bob to build automated intelligence tools that scale!
 
 ---
 
-[← Chapter 0: Environment Setup](./Chapter_0_Environment_Setup.md) | [Back to Main Guide](./README.md) | [Next: Chapter 2 Part A →](./Chapter_2_Part_A_Weather_Tool_with_Bob.md)
+[← Chapter 0: Environment Setup](./Chapter_0_Environment_Setup.md) | [Back to Main Guide](../README.md) | [Next: Chapter 2 →](./Chapter_2_Document_Analysis_Agent.md)

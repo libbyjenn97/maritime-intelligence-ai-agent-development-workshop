@@ -37,7 +37,7 @@ Before starting the workshop, you need to set up your IBM Cloud environment. Thi
 
 4. Screenshot reference:
 
-   ![Create IBMid registration page](images/chapter-0/create-your-IBMid.png)
+   ![Create IBMid registration page](./images/chapter-0/create-your-IBMid.png)
 
 5. Click the **Next** button. You will receive an email containing a one-time verification code.
 
@@ -63,7 +63,7 @@ Before starting the workshop, you need to set up your IBM Cloud environment. Thi
 
 3. **If you haven't created your IBMid yet**, you can create it directly through the registration form by entering your details:
 
-   ![Bob trial registration form](images/chapter-0/bob-trial.png)
+   ![Bob trial registration form](./images/chapter-0/bob-trial.png)
 
 4. Complete the registration process by following the on-screen instructions.
 
@@ -130,14 +130,14 @@ If you experience network issues with outbound traffic, you might need to config
 
 2. In the email, look for the link in the sentence **"Please go HERE to accept your invitation."** as highlighted in the screenshot below.
 
-   ![IBM Technology Zone invitation email](images/chapter-0/TZ-invite.png)
+   ![IBM Technology Zone invitation email](./images/chapter-0/TZ-invite.png)
 
 3. **Option:** If you miss the email or do not receive it for any reason, you can find the invitation on your IBM Cloud account:
    [https://cloud.ibm.com/notifications?type=account](https://cloud.ibm.com/notifications?type=account)
 
 4. Please select the **Join Now** link.
 
-   ![IBM Cloud account notifications showing the Join Now link](images/chapter-0/account-notifications.png)
+   ![IBM Cloud account notifications showing the Join Now link](./images/chapter-0/account-notifications.png)
 
 ---
 
@@ -147,7 +147,7 @@ If you experience network issues with outbound traffic, you might need to config
 
 2. You will find all the required service instances available under the **"AI/Machine Learning"** group.
 
-   ![IBM Cloud resource list showing AI and Machine Learning services](images/chapter-0/manage-env-resource-list.png)
+   ![IBM Cloud resource list showing AI and Machine Learning services](./images/chapter-0/manage-env-resource-list.png)
 
 ---
 
@@ -159,23 +159,23 @@ If you experience network issues with outbound traffic, you might need to config
 
 2. Click on **Manage → Access (IAM)**.
 
-   ![IBM Cloud IAM menu](images/chapter-0/ibmcloud-iam.png)
+   ![IBM Cloud IAM menu](./images/chapter-0/ibmcloud-iam.png)
 
 3. On the next screen, select **API Keys** from the menu.
 
-   ![Click API Keys option](images/chapter-0/click-api-key.png)
+   ![Click API Keys option](./images/chapter-0/click-api-key.png)
 
 4. Click on **Create**.
 
-   ![Create API Key button](images/chapter-0/create-api-key.png)
+   ![Create API Key button](./images/chapter-0/create-api-key.png)
 
 5. Give your API key a name, then click on **Create**.
 
-   ![API Key details form](images/chapter-0/api-key-details.png)
+   ![API Key details form](./images/chapter-0/api-key-details.png)
 
 6. Copy your API key and save it in a secure location. You will need it in later steps.
 
-   ![Copy API Key](images/chapter-0/copy-api-key.png)
+   ![Copy API Key](./images/chapter-0/copy-api-key.png)
 
 **Security Best Practices:**
 - Store your API key in a password manager
@@ -346,4 +346,4 @@ Once you've completed all steps and verified your setup, you're ready to begin t
 
 ---
 
-[← Back to Main Guide](./README.md) | [Next: Chapter 1 →](./Chapter_1_Your_First_AI_Assistant.md)
+[← Back to Main Guide](../README.md) | [Next: Chapter 1 →](./Chapter_1_Your_First_AI_Assistant.md)
