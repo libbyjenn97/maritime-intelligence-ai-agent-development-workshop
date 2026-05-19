@@ -61,43 +61,6 @@ maritime-intelligence-ai-agent-development-workshop/
 
 ---
 
-## 🚀 Getting Started
-
-### Before the Workshop
-
-1. **Verify Access**
-   - Log into watsonx Orchestrate
-   - Log into Langflow
-   - Test IBM Bob access
-
-2. **Download Materials**
-   - ONI Worldwide Threat to Shipping Report
-   - Workshop slides (if provided)
-
-3. **Review Prerequisites**
-   - Basic understanding of APIs
-   - Familiarity with JSON format
-   - No coding experience required!
-
-### During the Workshop
-
-1. **Follow Along**
-   - Each chapter has step-by-step instructions
-   - Screenshots provided for reference
-   - Instructors available for help
-
-2. **Ask Questions**
-   - No question is too basic
-   - Share your screen if stuck
-   - Help your neighbors
-
-3. **Take Notes**
-   - Document what works for you
-   - Note any customizations
-   - Capture ideas for your use cases
-
----
-
 ## 📚 Additional Resources
 
 ### Documentation
@@ -109,31 +72,6 @@ maritime-intelligence-ai-agent-development-workshop/
 - [ONI Worldwide Threat to Shipping Reports](https://www.oni.navy.mil/ONI-Reports/Shipping-Threat-Reports/)
 - [Open-Meteo Weather API](https://open-meteo.com/)
 - [Maritime News Sources](./reference/Maritime_News_Sources.md)
-
----
-
-## 🎓 Learning Path
-
-### Beginner Track
-1. Complete Chapter 1 (Your First AI Assistant)
-2. Follow Chapter 2 Part A (Weather Tool)
-3. Understand the concepts
-4. Ask questions
-
-### Advanced Track
-1. Complete all chapters
-2. Customize the tools
-3. Explore additional integrations
-4. Plan your own use cases
-
----
-
-## 🤝 Contributing
-
-Found an issue or have a suggestion?
-- Open an issue in this repository
-- Submit a pull request
-- Contact the workshop team
 
 ---
 
