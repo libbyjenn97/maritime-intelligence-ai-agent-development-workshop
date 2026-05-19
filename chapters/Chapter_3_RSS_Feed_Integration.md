@@ -41,8 +41,6 @@ Use this screenshot as the visual reference while recreating the flow in Langflo
 
 ![Chapter 3 Langflow flow reference](./images/chapter-3/Final_Connections.png)
 
-> This is the completed Chapter 3 reference flow. Follow the left-to-right block chain shown here: Python Interpreter → Type Convert → Prompt Template → Agent → Chat Output.
-
 ---
 
 ## 🧱 Langflow Blocks and Connections
