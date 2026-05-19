@@ -47,7 +47,7 @@ By the end of this workshop, you will:
 | 12:15 - 1:00 | 45 min | **Lunch break** | Break |
 | **1:00 - 2:15** | **75 min** | **[Chapter 2: Document Analysis Agent](./chapters/Chapter_2_Document_Analysis_Agent.md)** | Build weather tool with Bob |
 | 2:15 - 2:30 | 15 min | **Afternoon break** | Break |
-| 2:30 - 3:15 | 45 min | **[Chapter 3: Advanced Analysis](./chapters/Chapter_3_Langflow_Advanced_Analysis.md)** | Langflow integration |
+| 2:30 - 3:15 | 45 min | **[Chapter 3: RSS Feed Fetching](./chapters/Chapter_3_Langflow_Advanced_Analysis.md)** | Langflow integration |
 | 3:15 - 3:30 | 15 min | **[Chapter 4: Visualisation](./chapters/Chapter_4_Visualisation_with_Bob.md)** | Bob-generated dashboards |
 | 3:30 - 4:30 | 1h | **Wrap-up & Planning** | Pressure test, discovery workshop |
 
