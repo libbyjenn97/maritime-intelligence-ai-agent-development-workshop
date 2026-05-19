@@ -113,7 +113,7 @@ print(response.text[:20000])
 - Fetches the Cruise Law News RSS feed
 - Adds a browser-style user agent header
 - Prints the HTTP status
-- Prints up to the first 90,000 characters of the feed so the downstream blocks can process it
+- Prints up to the first 20,000 characters of the feed so the downstream blocks can process it
 
 ### Try running it
 
