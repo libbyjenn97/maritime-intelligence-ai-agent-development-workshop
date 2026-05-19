@@ -263,12 +263,9 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 ### 8.1: Share as MCP Server
 
 1. In Langflow, click the **Share** button in the top right
-
-![Share Button](images/chapter-3/share_mcp_server.png)
-
 2. Select **MCP Server** from the sharing options
 
-![Select MCP Server](images/chapter-3/mcp_server.png)
+![Share Button](images/chapter-3/share_mcp_server.png)
 
 3. Copy the MCP server URL - it should look like:
    ```
@@ -311,6 +308,9 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 ![Manage Agents](images/chapter-3/manage_agents.png)
 
 4. Add the RSS feed tool you just created to your agent's available tools
+
+![Add Tool to Agent](images/chapter-3/add_tool.png)
+
 5. Save the agent configuration
 
 ### 8.4: Test the Integration
