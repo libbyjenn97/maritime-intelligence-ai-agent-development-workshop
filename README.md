@@ -219,7 +219,7 @@ Found an issue or have a suggestion?
 
 ## 📝 License
 
-This workshop material is provided for educational purposes for workshop personnel and authorized participants.
+This workshop material is provided for educational purposes for workshop personnel and authorised participants.
 
 ---
 
