@@ -221,7 +221,7 @@ Now the fun part - let's ask questions!
 
    **What to observe:**
    - ✅ Agent searches for Somalia-related incidents
-   - ✅ Analyzes the regional context
+   - ✅ Analyses the regional context
    - ✅ Provides advisory information
 
    **Example response** (your output may vary as LLMs are non-deterministic):

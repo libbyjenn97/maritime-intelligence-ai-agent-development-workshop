@@ -29,7 +29,7 @@ Visual decision support tools:
 
 ---
 
-## 🚀 Quick Visualization Sprint
+## 🚀 Quick Visualisation Sprint
 
 ### Step 1: Prompt Bob for Interactive Map (5 minutes)
 
@@ -188,7 +188,7 @@ Also create:
 
 ---
 
-## 💡 Visualization Best Practices
+## 💡 Visualisation Best Practices
 
 **[TO BE COMPLETED]**
 
@@ -219,14 +219,14 @@ You've successfully completed Chapter 3 if:
 
 - ✅ Bob generated interactive map
 - ✅ Bob created dashboard
-- ✅ Visualizations render correctly
+- ✅ Visualisations render correctly
 - ✅ Exports work (HTML, PDF, PNG)
 - ✅ Professional appearance
 - ✅ Ready for operational use
 
 ---
 
-## 🎨 Customization Ideas
+## 🎨 Customisation Ideas
 
 **[TO BE COMPLETED]**
 
