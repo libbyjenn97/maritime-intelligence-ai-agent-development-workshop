@@ -222,7 +222,7 @@ Use the prompt output as the agent input.
 Your role is to analyse RSS feed notifications and extract structured maritime incident information.
 ```
 
-- **Max Iterations:** `50`
+- **Max Iterations:** `15`
 
 ### Agent input connection
 
