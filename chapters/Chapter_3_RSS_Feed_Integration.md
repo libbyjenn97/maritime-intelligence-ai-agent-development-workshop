@@ -277,7 +277,7 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 
 3. Copy the MCP server URL - it should look like:
    ```
-   https://langflow.29uxiijrzw1g.us-south.codeengine.appdomain.cloud/api/v1/mcp/project/4e43d1b2-0e50-4f58-a504-8fd18d9e6b52/streamable
+   https://langflow.example.codeengine.appdomain.cloud/api/v1/mcp/project/YOUR-PROJECT-ID/streamable
    ```
 
 ### 8.2: Add MCP Server to Orchestrate
