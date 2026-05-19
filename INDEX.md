@@ -37,7 +37,7 @@
 |---------|------|-------------|--------|
 | [Chapter 2 Part B: News Integration](./Chapter_2_Part_B_News_Integration.md) | 25 min | @Ethan Samuels @Wilson Wang | 📝 Skeleton |
 | [Chapter 2 Part C: Automated Reporting](./Chapter_2_Part_C_Automated_Reporting.md) | 25 min | [TO BE ASSIGNED] | 📝 Skeleton |
-| [Chapter 3: Visualization with Bob](./Chapter_3_Visualization_with_Bob.md) | 15 min | [TO BE ASSIGNED] | 📝 Skeleton |
+| [Chapter 3: Visualisation with Bob](./Chapter_3_Visualisation_with_Bob.md) | 15 min | [TO BE ASSIGNED] | 📝 Skeleton |
 
 ---
 
@@ -78,7 +78,7 @@ GitHub_Bootcamp_Guide/
 ├── 📘 Chapter_2_Part_A_Weather_Tool_with_Bob.md ✅ Complete
 ├── 📝 Chapter_2_Part_B_News_Integration.md     Skeleton
 ├── 📝 Chapter_2_Part_C_Automated_Reporting.md  Skeleton
-├── 📝 Chapter_3_Visualization_with_Bob.md      Skeleton
+├── 📝 Chapter_3_Visualisation_with_Bob.md      Skeleton
 │
 ├── 📁 assets/                                   (to be created)
 │   └── images/                                  Screenshots
@@ -143,7 +143,7 @@ GitHub_Bootcamp_Guide/
 **AI-Generated Code:**
 - [Chapter 2 Part A](./Chapter_2_Part_A_Weather_Tool_with_Bob.md) - Weather tool
 - [Chapter 2 Part C](./Chapter_2_Part_C_Automated_Reporting.md) - Reports (skeleton)
-- [Chapter 3](./Chapter_3_Visualization_with_Bob.md) - Visualizations (skeleton)
+- [Chapter 3](./Chapter_3_Visualisation_with_Bob.md) - Visualisations (skeleton)
 
 **Visual Workflows:**
 - [Chapter 2 Part B](./Chapter_2_Part_B_News_Integration.md) - Langflow (skeleton)
@@ -156,7 +156,7 @@ GitHub_Bootcamp_Guide/
 
 **Quick (< 30 min):**
 - [QUICK_START.md](./QUICK_START.md) - 5 min read
-- [Chapter 3](./Chapter_3_Visualization_with_Bob.md) - 15 min
+- [Chapter 3](./Chapter_3_Visualisation_with_Bob.md) - 15 min
 
 **Medium (30-60 min):**
 - [Chapter 1](./Chapter_1_Your_First_AI_Assistant.md) - 30 min

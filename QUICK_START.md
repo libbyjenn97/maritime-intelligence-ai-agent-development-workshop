@@ -86,7 +86,7 @@
 **What:** Interactive maps & dashboards  
 **Key Takeaway:** "56x faster visualization"
 
-👉 [Go to Chapter 3](./Chapter_3_Visualization_with_Bob.md)
+👉 [Go to Chapter 3](./Chapter_3_Visualisation_with_Bob.md)
 
 ---
 

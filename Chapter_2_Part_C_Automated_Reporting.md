@@ -239,4 +239,4 @@ Part C: Automated reporting & alerts (Bob-generated)
 
 ---
 
-[← Back to Part B](./Chapter_2_Part_B_News_Integration.md) | [Back to Main Guide](./README.md) | [Next: Chapter 3 →](./Chapter_3_Visualization_with_Bob.md)
+[← Back to Part B](./Chapter_2_Part_B_News_Integration.md) | [Back to Main Guide](./README.md) | [Next: Chapter 3 →](./Chapter_3_Visualisation_with_Bob.md)
