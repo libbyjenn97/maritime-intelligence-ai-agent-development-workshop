@@ -25,6 +25,16 @@ By the end of this workshop, you will:
 
 ---
 
+## 👥 Workshop Team
+
+**IBM Team:**
+- Libby Lavrova - Workshop Lead
+- Ethan Samuels - AI Engineer
+- Wilson Wang - Platform Engineer
+- Kitty Lomas - Innovation Designer
+
+---
+
 ## 📋 Workshop Schedule
 
 | Time | Duration | Chapter | Description |
@@ -78,16 +88,6 @@ maritime-intelligence-ai-agent-development-workshop/
 ## 📝 License
 
 This workshop material is provided for educational purposes for workshop personnel and authorised participants.
-
----
-
-## 👥 Workshop Team
-
-**IBM Team:**
-- Libby Lavrova - Workshop Lead
-- Ethan Samuels - AI Engineer
-- Wilson Wang - Platform Engineer
-- Kitty Lomas - Innovation Designer
 
 ---
 
