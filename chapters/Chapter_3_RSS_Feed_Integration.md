@@ -264,6 +264,67 @@ Run the flow and verify the following:
 
 ---
 
+## 🔗 Step 8: Connect Langflow to watsonx Orchestrate
+
+Now that your Langflow workflow is working, let's make it available as a tool in watsonx Orchestrate.
+
+### 8.1: Share as MCP Server
+
+1. In Langflow, click the **Share** button in the top right
+2. Select **MCP Server** from the sharing options
+
+![Share as MCP Server](./images/chapter-3/mcp_server.png)
+
+3. Copy the MCP server URL - it should look like:
+   ```
+   https://langflow.29uxiijrzw1g.us-south.codeengine.appdomain.cloud/api/v1/mcp/project/4e43d1b2-0e50-4f58-a504-8fd18d9e6b52/streamable
+   ```
+
+### 8.2: Add MCP Server to Orchestrate
+
+1. Go back to your watsonx Orchestrate project
+2. Navigate to **Tools** section
+3. Click **Create Tool**
+
+![Create Tool](./images/chapter-3/create_tool.png)
+
+4. Select **Add from MCP server**
+5. Click **Add MCP server**
+6. Choose **Remote MCP server**
+
+![Remote Server](./images/chapter-3/remote_server.png)
+
+7. Give your server a name (e.g., "Maritime RSS Feed Extractor")
+8. Paste in the MCP server URL you copied from Langflow
+9. Click **Connect**
+
+![Add Details and Connect](./images/chapter-3/add_details_and_connect.png)
+
+10. Click **Done** to add the tool to your project
+
+### 8.3: Create or Update an Agent
+
+1. Go to **Agents** in your Orchestrate project
+2. Either create a new agent or open an existing one
+
+![Create Agent](./images/chapter-3/create_agent.png)
+
+3. Click **Manage Agents** if editing an existing agent
+
+![Manage Agents](./images/chapter-3/manage_agents.png)
+
+4. Add the RSS feed tool you just created to your agent's available tools
+5. Save the agent configuration
+
+### 8.4: Test the Integration
+
+1. Open the agent chat interface
+2. Ask: "What are the latest maritime news updates?"
+3. The agent should use your Langflow tool to fetch and extract RSS feed data
+4. Verify the agent returns structured maritime incident information
+
+---
+
 ## 🖼️ Reference Architecture
 
 Use this build order when recreating the flow:
@@ -307,12 +368,14 @@ The model may still surface noisy links from article HTML. Re-run and validate t
 
 You've successfully completed Chapter 3 if:
 
-- ✅ The Langflow flow runs end to end
-- ✅ RSS content is fetched from Cruise Law News
+- ✅ The Langflow workflow runs end to end
+- ✅ RSS content is fetched from the GitHub Pages feed
 - ✅ The prompt receives the feed content through `rss_feed`
 - ✅ The agent returns structured maritime incident JSON
 - ✅ Output is visible in Chat Output
-- ✅ The flow is ready for later integration into reporting or visualisation
+- ✅ The workflow is shared as an MCP server
+- ✅ The MCP server is added as a tool in watsonx Orchestrate
+- ✅ An agent can successfully use the tool to fetch maritime news
 
 ---
 
