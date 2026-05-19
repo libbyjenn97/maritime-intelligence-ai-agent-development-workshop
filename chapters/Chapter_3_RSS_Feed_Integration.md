@@ -93,7 +93,7 @@ requests
 ```python
 import requests
 
-url = "https://www.cruiselawnews.com/feed/"
+url = "https://ethanmark7.github.io/rss_feed/rss.xml"
 headers = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -104,7 +104,7 @@ headers = {
 
 response = requests.get(url, headers=headers, timeout=30)
 print("Status:", response.status_code)
-print(response.text[:90000])
+print(response.text[:20000])
 ```
 
 ### What this block does
