@@ -215,7 +215,7 @@ Use the prompt output as the agent input.
 
 ### Agent settings
 
-- **Language Model:** `ibm/granite-8b-code-instruct`
+- **Language Model:** `ibm/granite-4-h-small`
 - **Agent Instructions:**
 
 ```text
@@ -340,7 +340,7 @@ Flow summary:
 - **Python Interpreter** fetches the RSS XML
 - **Type Convert** turns the result into a message
 - **Prompt Template** injects the feed into the extraction instructions
-- **Agent** runs the structured extraction with `ibm/granite-8b-code-instruct`
+- **Agent** runs the structured extraction with `ibm/granite-4-h-small`
 - **Chat Output** shows the final result
 
 ---
@@ -357,7 +357,7 @@ Verify the feed URL is reachable and that the request is not being blocked.
 Make sure the **Type Convert** block output type is set to `Message` and connected to the `rss_feed` input.
 
 ### Problem: Agent returns prose instead of JSON
-Confirm the prompt says `Return ONLY valid JSON` and that the model is set to `ibm/granite-8b-code-instruct`.
+Confirm the prompt says `Return ONLY valid JSON` and that the model is set to `ibm/granite-4-h-small`.
 
 ### Problem: Bad image links
 The model may still surface noisy links from article HTML. Re-run and validate that the returned URLs are direct image assets.
