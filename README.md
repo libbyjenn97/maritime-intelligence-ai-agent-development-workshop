@@ -85,7 +85,9 @@ This workshop material is provided for educational purposes for workshop personn
 
 **IBM Team:**
 - Libby Lavrova - Workshop Lead
-- [Additional team members]
+- Ethan Samuels - AI Engineer
+- Wilson Wang - Platform Engineer
+- Kitty Lomas - Innovation Designer
 
 ---
 
