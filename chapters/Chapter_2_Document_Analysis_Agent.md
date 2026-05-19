@@ -210,7 +210,7 @@ All approaches are valid! The key is that Bob generates the complete, working Py
 
 **Start a New Task:**
 
-Before generating the YAML configuration, start a new task in Bob to keep the work organized:
+Before generating the YAML configuration, start a new task in Bob to keep the work organised:
 - Click the **"New Task"** button or use the keyboard shortcut
 - This ensures Bob focuses on the YAML generation without mixing contexts
 

@@ -183,7 +183,7 @@ Now the fun part - let's ask questions!
    The agent should identify the main threat categories from the WTS report, such as:
 
    - **Robbery / Attempted robbery** - Armed boarders targeting cargo, equipment, or supplies (e.g., Philippines, Singapore Strait)
-   - **Boarding / Hijacking** - Unauthorized vessel embarkation, sometimes leading to seizure (e.g., Horn of Africa)
+   - **Boarding / Hijacking** - Unauthorised vessel embarkation, sometimes leading to seizure (e.g., Horn of Africa)
    - **Projectile attacks / Fired-upon** - Vessels struck by missiles, drones, or unmanned vehicles (e.g., Persian Gulf, UAE, Gulf of Oman)
    - **Armed robbery while berthed** - Attacks on docked vessels (e.g., Gulf of Guinea)
    - **Unmanned vehicle attacks** - Drone or ROV strikes (e.g., Persian Gulf)
@@ -206,7 +206,7 @@ Now the fun part - let's ask questions!
    This reveals:
    - Which knowledge source(s) the agent consulted
    - What information it extracted from the document
-   - How it synthesized the answer from the source material
+   - How it synthesised the answer from the source material
 
    > **Key insight:** This transparency helps you understand and trust the agent's responses, and verify that it's using the correct knowledge sources.
 
@@ -263,7 +263,7 @@ Now the fun part - let's ask questions!
 
    **Type this question:**
    ```
-   Summarize the piracy incidents
+   Summarise the piracy incidents
    ```
 
    ![Example query about piracy incidents](./images/chapter-1/piracy-incidents.png)

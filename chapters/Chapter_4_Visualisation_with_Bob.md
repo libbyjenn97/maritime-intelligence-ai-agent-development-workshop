@@ -197,7 +197,7 @@ Tips for:
 - Colour coding for severity
 - Interactive vs. static charts
 - Dashboard layout design
-- Export optimization
+- Export optimisation
 
 ---
 
@@ -246,8 +246,8 @@ Ideas for enhancing visualisations:
 - Plotly documentation
 - Dash framework guide
 - Visualization best practices
-- Color theory for dashboards
-- Export optimization tips
+- Colour theory for dashboards
+- Export optimisation tips
 
 ---
 
