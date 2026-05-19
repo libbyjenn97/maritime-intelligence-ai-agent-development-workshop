@@ -283,7 +283,7 @@ Now the fun part - let's ask questions!
    ![Example query about threat levels by region](./images/chapter-1/threat-levels.png)
 
    **What to observe:**
-   - ✅ Agent analyzes incident distribution
+   - ✅ Agent analyses incident distribution
    - ✅ Identifies high-risk regions
    - ✅ Provides reasoning
 

@@ -127,7 +127,7 @@ Now we'll use Bob to generate our complete weather tool!
 
 **Select the Right Mode:**
 
-Before we start, make sure you're in **Code mode** (💻) in Bob. This mode is optimized for generating code and technical files.
+Before we start, make sure you're in **Code mode** (💻) in Bob. This mode is optimised for generating code and technical files.
 
 - Look for the mode selector in Bob's interface
 - Select **"💻 Code"** mode

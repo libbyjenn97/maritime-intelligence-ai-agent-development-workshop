@@ -302,7 +302,7 @@ Before proceeding to Chapter 1, verify you have completed:
 - Check spam/junk folder
 - Verify you used the correct email for IBMid registration
 - Check IBM Cloud notifications: [https://cloud.ibm.com/notifications?type=account](https://cloud.ibm.com/notifications?type=account)
-- Contact workshop organizer
+- Contact workshop organiser
 
 ### Issue: Can't see resources in IBM Cloud
 
@@ -310,7 +310,7 @@ Before proceeding to Chapter 1, verify you have completed:
 - Verify you accepted the invitation
 - Check you're in the correct account (top navigation bar)
 - Refresh the page
-- Contact workshop organizer
+- Contact workshop organiser
 
 ### Issue: API key creation fails
 
@@ -318,7 +318,7 @@ Before proceeding to Chapter 1, verify you have completed:
 - Verify you have proper permissions
 - Try a different browser
 - Clear browser cache
-- Contact workshop organizer
+- Contact workshop organiser
 
 ---
 

@@ -1,8 +1,8 @@
 # Chapter 3: Visualization with Bob
 
-**Time:** 3:15 PM - 3:30 PM (15 minutes)  
-**Goal:** Rapid visualization generation with AI  
-**Difficulty:** Beginner-Intermediate  
+**Time:** 3:15 PM - 3:30 PM (15 minutes)
+**Goal:** Rapid visualisation generation with AI
+**Difficulty:** Beginner-Intermediate
 **Prerequisites:** Completed Chapter 2, IBM Bob access  
 **Authors:** [TO BE ASSIGNED]
 
@@ -14,7 +14,7 @@ By the end of this chapter, you will:
 
 1. ✅ Use Bob to generate interactive maps
 2. ✅ Create dashboards with Bob
-3. ✅ Export visualizations for briefings
+3. ✅ Export visualisations for briefings
 4. ✅ Experience rapid prototyping with AI
 
 ---
@@ -25,7 +25,7 @@ Visual decision support tools:
 - Interactive maritime incident map
 - Real-time dashboard with key metrics
 - Exportable briefing materials (HTML, PDF, PNG)
-- Professional visualizations in minutes
+- Professional visualisations in minutes
 
 ---
 
@@ -119,7 +119,7 @@ Also create:
 
 **What Bob will generate:**
 - Complete dashboard application
-- Multiple visualization components
+- Multiple visualisation components
 - Responsive layout
 - Export functionality
 
@@ -170,7 +170,7 @@ Also create:
 
 **Traditional Approach:**
 - Learn Plotly/Dash: 4 hours
-- Design visualizations: 2 hours
+- Design visualisations: 2 hours
 - Write code: 4 hours
 - Style and polish: 2 hours
 - Test and debug: 2 hours
@@ -193,8 +193,8 @@ Also create:
 **[TO BE COMPLETED]**
 
 Tips for:
-- Effective data visualization
-- Color coding for severity
+- Effective data visualisation
+- Colour coding for severity
 - Interactive vs. static charts
 - Dashboard layout design
 - Export optimization
@@ -230,7 +230,7 @@ You've successfully completed Chapter 3 if:
 
 **[TO BE COMPLETED]**
 
-Ideas for enhancing visualizations:
+Ideas for enhancing visualisations:
 - Add real-time data feeds
 - Include weather overlays
 - Show vessel tracking
@@ -258,8 +258,8 @@ Ideas for enhancing visualizations:
 ✅ **Chapter 1:** Simple document Q&A assistant  
 ✅ **Chapter 2 Part A:** Weather intelligence tool (Bob)  
 ✅ **Chapter 2 Part B:** News monitoring (Langflow)  
-✅ **Chapter 2 Part C:** Automated reporting (Bob)  
-✅ **Chapter 3:** Interactive visualizations (Bob)
+✅ **Chapter 2 Part C:** Automated reporting (Bob)
+✅ **Chapter 3:** Interactive visualisations (Bob)
 
 **Result:** Complete maritime intelligence system with visual decision support!
 
