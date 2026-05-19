@@ -20,40 +20,13 @@ Before starting the workshop, you need to set up your IBM Cloud environment. Thi
 **Important:** Complete these steps **at least 48 hours before** the workshop begins to ensure a smooth experience. Account provisioning and approval may take time.
 
 ---
-
-## 🛠️ Step 1: Create your IBMid
-
-**⏰ IMPORTANT TIMING:** Complete this step **at least 48 hours before the workshop** to allow time for account provisioning.
-
-**Note:** Follow these brief instructions to create an IBMid. These are specifically for our Business Partners and clients who may not have accessed a TechZone environment previously. IBM employees do not need to register. Clients and Business Partners **must have an IBMid before** you invite them to the workshop environments. They will **not** receive the email inviting them to the workshop account unless they already have an IBMid.
-
-1. Start by accessing the [IBMid Registration Page](https://www.ibm.com/account/reg/signup?formid=urx-19776&).
-
-2. Enter the required information in the fields provided, such as email address, name, company, and country.
-
-3. **IMPORTANT:** Your email address becomes your IBMid, which you will use to access the bootcamp environment.
-
-4. Screenshot reference:
-
-   ![Create IBMid registration page](./images/chapter-0/create-your-IBMid.png)
-
-5. Click the **Next** button. You will receive an email containing a one-time verification code.
-
-6. In the verification field, enter the code that is provided in the email.
-
-7. Click **Create account**.
-
-8. An email will be sent indicating that your IBMid account creation was successful and your account is now activated.
-
----
-
-## 🤖 Step 2: Register for Bob Trial and Install
+## 🤖 Step 1: Register for Bob Trial and Install
 
 **⏰ IMPORTANT TIMING:** Complete this step **at least 48 hours before the workshop** to allow time for trial approval and access provisioning.
 
 **Note:** Bob is IBM's AI coding assistant that you'll use throughout this workshop. You'll need to register for a trial account and install the application to access Bob's features.
 
-### 2.1 Register for Bob Trial
+### 1.1 Register for Bob Trial
 
 1. Navigate to the Bob trial registration page: [https://bob.ibm.com/trial](https://bob.ibm.com/trial)
 
@@ -67,7 +40,7 @@ Before starting the workshop, you need to set up your IBM Cloud environment. Thi
 
 5. Once registered, proceed to install Bob on your system.
 
-### 2.2 Installing IBM Bob
+### 1.2 Installing IBM Bob
 
 Follow these steps to install IBM Bob. The setup takes about five minutes.
 
@@ -80,7 +53,7 @@ Follow these steps to install IBM Bob. The setup takes about five minutes.
 | **Storage** | At least 500 MB available disk space |
 | **Network** | Active internet connection |
 
-### 2.3 Download IBM Bob
+### 1.3 Download IBM Bob
 
 **Get the installer** - Choose the correct version for your operating system:
 
@@ -96,7 +69,7 @@ Follow these steps to install IBM Bob. The setup takes about five minutes.
 
 3. **For Linux/Windows**: Run the installer and follow the on-screen instructions.
 
-### 2.4 Sign in with your IBMid
+### 1.4 Sign in with your IBMid
 
 **Note:** An IBMid is required to authenticate. If you do not have one, see Step 1 above.
 
@@ -120,7 +93,7 @@ If you experience network issues with outbound traffic, you might need to config
 
 ---
 
-## 🔑 Step 3: Access Class Environment
+## 🔑 Step 2: Access Class Environment
 
 **Note:** Follow these instructions for accessing your instance of the class environment in order to successfully complete the Agentic AI Bootcamp.
 
@@ -139,7 +112,7 @@ If you experience network issues with outbound traffic, you might need to config
 
 ---
 
-## 📋 Step 4: Manage Environment Resource List on IBM Cloud
+## 📋 Step 3: Manage Environment Resource List on IBM Cloud
 
 1. Please select the environment in the top navigation bar and the resource list icon on the left side.
 
@@ -149,7 +122,7 @@ If you experience network issues with outbound traffic, you might need to config
 
 ---
 
-## 🔐 Step 5: Creating a Cloud API Key
+## 🔐 Step 4: Creating a Cloud API Key
 
 **Important:** You will need this API key for later chapters, so save it securely!
 
@@ -183,7 +156,7 @@ If you experience network issues with outbound traffic, you might need to config
 
 ---
 
-## ✅ Step 6: Verify Your Setup
+## ✅ Step 5: Verify Your Setup
 
 Before installing the ADK, let's verify that all previous steps are complete:
 
@@ -211,7 +184,7 @@ If any items are incomplete, go back and complete them before proceeding to Step
 
 ---
 
-## 🛠️ Step 7: Install watsonx Orchestrate ADK
+## 🛠️ Step 6: Install watsonx Orchestrate ADK
 
 The watsonx Orchestrate Agent Development Kit (ADK) allows you to create, test, and deploy agents and tools from your command line.
 
@@ -227,7 +200,7 @@ pip --version
 
 If you don't have Python or pip installed, download Python from [python.org](https://www.python.org/downloads/) (pip is included with Python 3.4+).
 
-### 7.1 Using a Virtual Environment (Recommended)
+### 6.1 Using a Virtual Environment (Recommended)
 
 For better package management and isolation, we recommend using a virtual environment:
 
@@ -260,7 +233,7 @@ source ./.venv/bin/activate
 pip install ibm-watsonx-orchestrate
 ```
 
-### 7.2 Verify Installation
+### 6.2 Verify Installation
 
 Check that the ADK is installed correctly:
 
