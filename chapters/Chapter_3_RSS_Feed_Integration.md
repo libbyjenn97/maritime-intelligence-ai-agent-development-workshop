@@ -117,12 +117,9 @@ print(response.text[:90000])
 - Prints the HTTP status
 - Prints up to the first 90,000 characters of the feed so the downstream blocks can process it
 
-### Expected result
+### Try running it
 
-You should see:
-
-- A successful HTTP status such as `200`
-- Raw RSS/XML content in the output
+Run the workflow to see the result - you should see a successful HTTP status such as `200` and raw RSS/XML content in the output.
 
 ---
 
