@@ -320,6 +320,8 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 3. The agent should use your Langflow tool to fetch and extract RSS feed data
 4. Verify the agent returns structured maritime incident information
 
+![Latest News Test](images/chapter-3/latest_news.png)
+
 ---
 
 ## 🎓 Key Takeaway
