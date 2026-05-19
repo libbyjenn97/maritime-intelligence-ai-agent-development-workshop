@@ -1,4 +1,4 @@
-# Chapter 3: Visualization with Bob
+# Chapter 4: Visualisation with Bob
 
 **Time:** 3:15 PM - 3:30 PM (15 minutes)
 **Goal:** Rapid visualisation generation with AI
