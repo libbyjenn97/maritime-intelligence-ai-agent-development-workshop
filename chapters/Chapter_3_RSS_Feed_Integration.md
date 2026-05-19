@@ -39,7 +39,7 @@ A Langflow workflow that reads a maritime RSS feed and transforms it into struct
 
 Use this screenshot as the visual reference while recreating the flow in Langflow:
 
-![Chapter 3 Langflow flow reference](./images/chapter-3/Final_Connections.png)
+![Chapter 3 Langflow flow reference](images/chapter-3/Final_Connections.png)
 
 ---
 
@@ -273,7 +273,7 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 1. In Langflow, click the **Share** button in the top right
 2. Select **MCP Server** from the sharing options
 
-![Share as MCP Server](./images/chapter-3/mcp_server.png)
+![Share as MCP Server](images/chapter-3/mcp_server.png)
 
 3. Copy the MCP server URL - it should look like:
    ```
@@ -286,19 +286,19 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 2. Navigate to **Tools** section
 3. Click **Create Tool**
 
-![Create Tool](./images/chapter-3/create_tool.png)
+![Create Tool](images/chapter-3/create_tool.png)
 
 4. Select **Add from MCP server**
 5. Click **Add MCP server**
 6. Choose **Remote MCP server**
 
-![Remote Server](./images/chapter-3/remote_server.png)
+![Remote Server](images/chapter-3/remote_server.png)
 
 7. Give your server a name (e.g., "Maritime RSS Feed Extractor")
 8. Paste in the MCP server URL you copied from Langflow
 9. Click **Connect**
 
-![Add Details and Connect](./images/chapter-3/add_details_and_connect.png)
+![Add Details and Connect](images/chapter-3/add_details_and_connect.png)
 
 10. Click **Done** to add the tool to your project
 
@@ -307,11 +307,11 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 1. Go to **Agents** in your Orchestrate project
 2. Either create a new agent or open an existing one
 
-![Create Agent](./images/chapter-3/create_agent.png)
+![Create Agent](images/chapter-3/create_agent.png)
 
 3. Click **Manage Agents** if editing an existing agent
 
-![Manage Agents](./images/chapter-3/manage_agents.png)
+![Manage Agents](images/chapter-3/manage_agents.png)
 
 4. Add the RSS feed tool you just created to your agent's available tools
 5. Save the agent configuration
