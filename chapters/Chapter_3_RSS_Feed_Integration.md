@@ -126,6 +126,8 @@ print(response.text[:20000])
 - Prints the HTTP status
 - Prints up to the first 20,000 characters of the feed so the downstream blocks can process it
 
+![Click Play Button](images/chapter-3/click_play_button.png)
+
 ### Try running it
 
 Run the workflow to see the result - you should see a successful HTTP status such as `200` and raw RSS/XML content in the output.
