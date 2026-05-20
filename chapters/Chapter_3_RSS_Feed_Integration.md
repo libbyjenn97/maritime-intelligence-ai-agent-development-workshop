@@ -17,6 +17,14 @@ By the end of this chapter, you will:
 
 ---
 
+## 🔗 Access Langflow
+
+Click here to access the Langflow environment for this workshop:
+
+**[Open Langflow](https://langflow.29hoasy3dp25.us-south.codeengine.appdomain.cloud/)**
+
+---
+
 ## 📖 What We're Building
 
 A Langflow workflow that reads a maritime RSS feed and transforms it into structured incident data for later use in watsonx Orchestrate, reporting, or visualisation.
@@ -68,6 +76,11 @@ This creates a linear extraction pipeline from RSS collection through to final s
 
 1. Open Langflow
 2. Create a new blank flow
+
+![Create New Flow](images/chapter-3/create_new_flow.png)
+
+![Create Blank Flow](images/chapter-3/create_blank_flow.png)
+
 3. Add the following blocks to the canvas:
    - **Python Interpreter**
    - **Type Convert**
@@ -80,6 +93,10 @@ This creates a linear extraction pipeline from RSS collection through to final s
 
 ## 🐍 Step 2: Configure the Python Interpreter Block
 
+![Search for Python Interpreter](images/chapter-3/search_for_python_interpreter.png)
+
+![Drag and Drop or Click Plus Button](images/chapter-3/drag and drop or click the plus button to add the interpreter.png)
+
 Add `requests` to the **Global Imports** field.
 
 ### Global Imports
@@ -87,6 +104,8 @@ Add `requests` to the **Global Imports** field.
 ```text
 requests
 ```
+
+![Click Expand to Apply Python Code](images/chapter-3/click_expand_to_apply_python_code.png)
 
 ### Python Code
 
