@@ -270,6 +270,8 @@ This lets you test the flow directly inside Langflow and inspect the returned JS
 
 ## 🧪 Step 7: Test the Full Flow
 
+![Full Flow](images/chapter-3/full_flow.png)
+
 Run the flow and verify the following:
 
 - The Python block successfully fetches the RSS feed
@@ -277,6 +279,14 @@ Run the flow and verify the following:
 - The Prompt Template receives the `rss_feed` variable correctly
 - The Language Model returns valid JSON
 - The Chat Output displays extracted incident data
+
+To run, click the playground button:
+
+![Click Playground](images/chapter-3/click_playground.png)
+
+Then press run flow:
+
+![Run Flow](images/chapter-3/run_flow.png)
 
 ---
 
