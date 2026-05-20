@@ -161,59 +161,49 @@ Create a prompt template with one dynamic variable:
 Paste the following into the template field.
 
 ```text
-You are a maritime incident extraction system.
+You are a maritime incident data extraction and conversion specialist. 
 
-Extract structured incident data from an RSS feed item.
+Your job is to extract incident data from an RSS XML input, classify incident_type, extract all image urls and return a JSON array object that contains all <item>.
 
-Return ONLY valid JSON.
+Instructions:
+- If no incident exists, return empty json array []
+- Extract all images from xml tags from each item: <media:content medium="image"> and <img>
+- Do not output anything other than a valid json array object
+- Do not output your thinking process or explanation
+- "incident_type" should be classified into one of the following types based on <description>: "collision", "grounding", "fire", "machinery failure", "pollution", "weather", "port disruption", "security", "other".
+- "title" should be the content extracted from <title> 
+- "incident_description" should be the human readable content extracted from <description>
+- ignore any <item> that doesn't have <description> or has empty <description> content
 
-Rules:
-- Do not invent data
-- Use null if missing
-- If no incident exists, return: "incident_detected": false
-- If multiple incidents exist, return a JSON array
-
-Also extract up to 3 image URLs from the article content:
-- Look for images in <content:encoded>, <description>, or <img src="">
-- Return only direct image URLs
-- Ignore icons, tracking pixels, and logos
-- Must be different, varying image size is not helpful take the biggest 3 different
-
-Return format:
+Output JSON format:
 [
-  {
-    "incident_detected": true,
-    "date": "",
-    "title": "",
-    "incident_type": "collision | grounding | piracy | fire | machinery failure | pollution | weather | port disruption | security | other",
-    "location": "",
-    "incident_description": "",
-    "vessels_involved": [
-      {
-        "name": "",
-        "type": ""
-      }
-    ],
-    "casualties": {
-      "deaths": 0,
-      "injured": 0,
-      "missing": 0
-    },
-    "environmental_impact": "",
-    "source": "",
-    "images": [
-      "",
-      "",
-      ""
-    ],
-    "confidence": "high | medium | low"
-  }
+  "incident_detected": true,
+  "date": "",
+  "title": "",
+  "incident_type": "",
+  "location": "",
+  "incident_description": "",
+  "vessels_involved": [
+    
+      "name": "",
+      "type": ""
+    
+  ],
+  "casualties": 
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0
+  ,
+  "environmental_impact": "",
+  "source": "",
+  "images": [],
+  "confidence": "high | medium | low"
 ]
-
-There can be more than 1 return all of the incidents given in the RSS feed following the above format.
 
 RSS input:
 {rss_feed}
+
+Output json array object only with no backticks no explanation:
 ```
 
 ### What this block does
@@ -227,13 +217,13 @@ RSS input:
 
 ## 🤖 Step 5: Configure the Language Model Block
 
-Use the prompt output as the language model input.
+Use the prompt template output as the language model input.
 
 ![Language Model](images/chapter-3/language_model.png)
 
 ### Language Model settings
 
-- **Model:** `ibm/granite-4-h-small`
+- **Model:** `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
 - **System Message:**
 
 ```text
