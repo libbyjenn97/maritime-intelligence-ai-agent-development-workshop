@@ -47,7 +47,7 @@ A Langflow workflow that reads a maritime RSS feed and transforms it into struct
 
 Use this screenshot as the visual reference while recreating the flow in Langflow:
 
-![Chapter 3 Langflow flow reference](images/chapter-3/Final_Connections.png)
+![Chapter 3 Langflow flow reference](images/chapter-3/full_flow.png)
 
 ---
 
@@ -230,19 +230,32 @@ Use the prompt template output as the language model input.
 Your role is to analyse RSS feed notifications and extract structured maritime incident information.
 ```
 
+#### If the model is not appearing:
+
+1. Click on the Language Model block
+2. Select **Manage Model Providers**
+
+![Manage Providers](images/chapter-3/manage_providers.png)
+
+3. Select **IBM WatsonX**
+4. Scroll down to find `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
+5. Check the box to enable it
+
+![Add Model](images/chapter-3/add_model.png)
+
 #### First-time setup (if this is your first Language Model block):
 
-Click on the Language Model block to open the right sidebar and configure:
+Click on the Language Model block to configure:
 
-1. **API Key:** Add the IBM Cloud API key you created during setup (from IAM API Keys in IBM Cloud)
-2. **Project ID:** Add your watsonx.ai project ID from the runtime instance
-3. **Max Tokens:** Set to `8192` (the maximum for this model)
+1. **API Key:** Add the IBM Cloud API key you created during setup
+2. **Project ID:** Add your watsonx.ai project ID
+3. **Max Tokens:** Set to `8192`
 
 ![Add API Key, Project ID and Max Tokens](images/chapter-3/add_api_key_and_token_limit.png)
 
 #### If you've already configured a Language Model block:
 
-Simply click on the Language Model block and update the max tokens to `8192`.
+Click on the Language Model block and update the max tokens to `8192`.
 
 ![Update Max Tokens](images/chapter-3/update_tokens.png)
 
