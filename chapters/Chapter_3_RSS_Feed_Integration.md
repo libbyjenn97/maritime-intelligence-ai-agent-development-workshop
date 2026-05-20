@@ -301,6 +301,10 @@ Then press run flow:
 
 ![Run Flow](images/chapter-3/run_flow.png)
 
+Example output:
+
+![Run Flow](images/chapter-3/example_output.png)
+
 ---
 
 ## 🔗 Step 8: Connect Langflow to watsonx Orchestrate
