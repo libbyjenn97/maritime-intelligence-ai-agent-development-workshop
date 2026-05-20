@@ -81,14 +81,6 @@ This creates a linear extraction pipeline from RSS collection through to final s
 
 ![Create Blank Flow](images/chapter-3/create_blank_flow.png)
 
-3. Add the following blocks to the canvas:
-   - **Python Interpreter**
-   - **Type Convert**
-   - **Prompt Template**
-   - **Agent**
-   - **Chat Output**
-4. Arrange them left to right so the flow is easy to follow
-
 ---
 
 ## 🐍 Step 2: Configure the Python Interpreter Block
@@ -102,6 +94,8 @@ Add `requests` to the **Global Imports** field.
 ```text
 requests
 ```
+
+Click to expand the Python Interpreter block, then paste in the Python code below:
 
 ![Click Expand to Apply Python Code](images/chapter-3/click_expand_to_apply_python_code.png)
 
