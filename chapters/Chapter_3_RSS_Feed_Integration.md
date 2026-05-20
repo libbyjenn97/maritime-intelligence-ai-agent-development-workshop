@@ -85,9 +85,11 @@ This creates a linear extraction pipeline from RSS collection through to final s
 
 ## 🐍 Step 2: Configure the Python Interpreter Block
 
+1. Search for the python interpreter block.
 ![Search for Python Interpreter](images/chapter-3/search_for_python_interpreter.png)
-
-Add `requests` to the **Global Imports** field.
+2. Drag and drop the python interpreter block onto the screen.
+![Add Python Interpreter](images/chapter-3/drag_and_drop.png.png)
+3. Add `requests` to the **Global Imports** field.
 
 ### Global Imports
 
