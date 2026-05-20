@@ -327,51 +327,65 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 
 ### 8.2: Add MCP Server to Orchestrate
 
-1. Go back to your watsonx Orchestrate project
-2. Navigate to **Tools** section
-3. Click **Create Tool**
+1. Go back to your watsonx Orchestrate main pagem click on the top left hamburger menu '☰', then click on 'Build'
 
-![Create Tool](images/chapter-3/create_tool.png)
+![alt text](<images/chapter-3/wxo build.png>)
 
-4. Select **Add from MCP server**
-5. Click **Add MCP server**
-6. Choose **Remote MCP server**
+2. Select the agent you created earlier in Chapter 1
 
-![Remote Server](images/chapter-3/remote_server.png)
+![alt text](images/chapter-3/2-wxo-select-agent.png)
 
-7. Give your server a name (e.g., "Maritime RSS Feed Extractor")
-8. Paste in the MCP server URL you copied from Langflow
-9. Click **Connect**
+3. Scroll down to Toolset section and click on 'Add tool'
 
-![Add Details and Connect](images/chapter-3/add_details_and_connect.png)
+![alt text](images/chapter-3/3-wxo-select-tool.png)
 
-10. Click **Done** to add the tool to your project
+4. Select 'MCP Server'
 
-### 8.3: Create or Update an Agent
+![alt text](images/chapter-3/4-select-mcp.png)
 
-1. Go to **Agents** in your Orchestrate project
-2. Either create a new agent or open an existing one
+5. Click on 'Add MCP Server'
 
-![Create Agent](images/chapter-3/create_agent.png)
+![alt text](<images/chapter-3/5-add MCP.png>)
 
-3. Click **Manage Agents** if editing an existing agent
+6. Select "Remote MCP server" then click on 'Next'
 
-![Manage Agents](images/chapter-3/manage_agents.png)
+![alt text](images/chapter-3/6-add-mcp-2.png)
 
-4. Add the RSS feed tool you just created to your agent's available tools
+7. 
+- Provide a unique name `Maritime_RSS_Fetch_MCP`
+- Description (Optional) `A MCP Server for fetching news from maritime RSS feeds.`
+- Provide MCP server URL you generated from Step 8, an example is: `https://langflow.29uxiijrzw1g.us-south.codeengine.appdomain.cloud/api/v1/mcp/project/4e43d1b2-0e50-4f58-a504-8fd18d9e6b52/streamable`
 
-![Add Tool to Agent](images/chapter-3/add_tool.png)
+Leave everything else as deafault And then click on 'Connect'
 
-5. Save the agent configuration
+![alt text](images/chapter-3/7-conenct.png)
+
+8. Select the Lanflow that you have built then click on 'Add to Agent'
+
+![alt text](images/chapter-3/8-select-flow.png)
+
+9. Now on the top right of the page you should see a success message
+
+![alt text](images/chapter-3/9-add-success.png)
+
 
 ### 8.4: Test the Integration
 
-1. Open the agent chat interface
+1. Now we have successfully added our Langflow agent as a tool to Orchestrate agent, let's test it out. On the right hand side agent chat interface
 2. Ask: "What are the latest maritime news updates?"
-3. The agent should use your Langflow tool to fetch and extract RSS feed data
-4. Verify the agent returns structured maritime incident information
+3. It can take 1-2 minutes to get an answer back depending on the number of news to be fetched and converted After some time you should be able to see the agent has responded with a table and analysis.
 
-![Latest News Test](images/chapter-3/latest_news.png)
+![alt text](images/chapter-3/10-test-with-prompt-1.png)
+
+4. Click on 'Show Reasoning' to show the throught processes from the Watsoonx ORchestrate agent and we can see that it leveraged the MCP tool you have built. This is ver useful in debugging and it shows the agent chain of thought. Click on 'Step 1' to see the input and output to the tool and click on 'show more' to see the entire output from the langflow mcp server.
+
+![alt text](images/chapter-3/11-show-reasoning.png)
+
+5. Scroll to he bottom of the chat to see analysis. Notice that it can be quite generic but it can be tailored to be more specific by making changes to agent's behaviour.
+
+![alt text](images/chapter-3/12-show-analysis.png)
+
+Congratulations! You have completed Chapter 3 handson activity!
 
 ---
 
