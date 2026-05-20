@@ -248,6 +248,8 @@ Connect the `Prompt` output from **Prompt Template** into the **Input** on **Lan
 ## 💬 Step 6: Connect Chat Output
 
 Connect the `Response` output from **Language Model** to **Chat Output**.
+![Chat Output Block](images/chapter-3/output_block.png)
+
 
 This lets you test the flow directly inside Langflow and inspect the returned JSON.
 
