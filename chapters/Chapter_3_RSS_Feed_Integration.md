@@ -229,9 +229,22 @@ Use the prompt template output as the language model input.
 ```text
 Your role is to analyse RSS feed notifications and extract structured maritime incident information.
 ```
-- **Max Tokens:** Click on the Language Model block to open the right sidebar, then set the max tokens to `8192` (the maximum for this model).
 
-![Update Tokens](images/chapter-3/update_tokens.png)
+#### First-time setup (if this is your first Language Model block):
+
+Click on the Language Model block to open the right sidebar and configure:
+
+1. **API Key:** Add the IBM Cloud API key you created during setup (from IAM API Keys in IBM Cloud)
+2. **Project ID:** Add your watsonx.ai project ID from the runtime instance
+3. **Max Tokens:** Set to `8192` (the maximum for this model)
+
+![Add API Key, Project ID and Max Tokens](images/chapter-3/add_api_key_and_token_limit.png)
+
+#### If you've already configured a Language Model block:
+
+Simply click on the Language Model block and update the max tokens to `8192`.
+
+![Update Max Tokens](images/chapter-3/update_tokens.png)
 
 
 ### Language Model input connection
