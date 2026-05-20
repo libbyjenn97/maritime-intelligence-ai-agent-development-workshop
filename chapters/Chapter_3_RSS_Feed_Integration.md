@@ -95,8 +95,6 @@ This creates a linear extraction pipeline from RSS collection through to final s
 
 ![Search for Python Interpreter](images/chapter-3/search_for_python_interpreter.png)
 
-![Drag and Drop or Click Plus Button](images/chapter-3/drag and drop or click the plus button to add the interpreter.png)
-
 Add `requests` to the **Global Imports** field.
 
 ### Global Imports
