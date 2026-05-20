@@ -13,7 +13,7 @@ By the end of this chapter, you will:
 2. ✅ Pull live RSS content with the Python Interpreter block
 3. ✅ Convert raw Python output into a message Langflow can pass downstream
 4. ✅ Use a prompt template to enforce structured maritime extraction
-5. ✅ Configure an agent to return incident JSON for downstream workflows
+5. ✅ Configure a language model to return incident JSON for downstream workflows
 
 ---
 
@@ -31,13 +31,13 @@ A Langflow workflow that reads a maritime RSS feed and transforms it into struct
 
 ### Block sequence
 
-`Python Interpreter → Type Convert → Prompt Template → Agent → Chat Output`
+`Python Interpreter → Type Convert → Prompt Template → Language Model → Chat Output`
 
 ### What the workflow does
 
 - Pulls XML content from a live maritime RSS feed
 - Passes the raw feed into a prompt as input text
-- Uses an LLM agent to extract incident details
+- Uses an LLM to extract incident details
 - Returns structured JSON
 - Sends the result to chat output for testing in Langflow
 
@@ -58,15 +58,15 @@ Build the flow in this exact order:
 1. **Python Interpreter**
 2. **Type Convert**
 3. **Prompt Template**
-4. **Agent**
+4. **Language Model**
 5. **Chat Output**
 
 ### Connections
 
 - Connect the `Results` output from **Python Interpreter** to the `Input` of **Type Convert**
 - Connect the `Message Output` from **Type Convert** to the `rss_feed` variable input on **Prompt Template**
-- Connect the `Prompt` output from **Prompt Template** to the `Input` on **Agent**
-- Connect the `Response` output from **Agent** to **Chat Output**
+- Connect the `Prompt` output from **Prompt Template** to the `Input` on **Language Model**
+- Connect the `Response` output from **Language Model** to **Chat Output**
 
 This creates a linear extraction pipeline from RSS collection through to final structured output.
 
@@ -88,18 +88,13 @@ This creates a linear extraction pipeline from RSS collection through to final s
 1. Search for the python interpreter block.
 ![Search for Python Interpreter](images/chapter-3/search_for_python_interpreter.png)
 2. Drag and drop the python interpreter block onto the screen.
-![Add Python Interpreter](images/chapter-3/drag_and_drop.png.png)
+![Add Python Interpreter](images/chapter-3/drag_and_drop.png)
 3. Add `requests` to the **Global Imports** field.
-
-### Global Imports
-
-```text
-requests
-```
-
-Click to expand the Python Interpreter block, then paste in the Python code below:
-
-![Click Expand to Apply Python Code](images/chapter-3/click_expand_to_apply_python_code.png)
+  ```text
+  requests
+  ```
+4. Click to expand the Python Interpreter block, then paste in the Python code below:
+![Click Expand to Apply Python Code](images/chapter-3/add_code.png)
 
 ### Python Code
 
@@ -146,6 +141,9 @@ The Python Interpreter output needs to be converted into a message before it can
 - **Input:** Connect from Python Interpreter `Results`
 - **Output Type:** `Message`
 
+
+![Click Play Button](images/chapter-3/type_block.png)
+
 ### Why this matters
 
 This makes the Python output compatible with the variable input expected by the prompt block.
@@ -157,6 +155,8 @@ This makes the Python output compatible with the variable input expected by the 
 Create a prompt template with one dynamic variable:
 
 - `rss_feed`
+
+![Prompt Template](images/chapter-3/prompt_template.png)
 
 Paste the following into the template field.
 
@@ -225,36 +225,35 @@ RSS input:
 
 ---
 
-## 🤖 Step 5: Configure the Agent Block
+## 🤖 Step 5: Configure the Language Model Block
 
-Use the prompt output as the agent input.
+Use the prompt output as the language model input.
 
-### Agent settings
+![Language Model](images/chapter-3/language_model.png)
 
-- **Language Model:** `ibm/granite-4-h-small`
-- **Agent Instructions:**
+### Language Model settings
+
+- **Model:** `ibm/granite-4-h-small`
+- **System Message:**
 
 ```text
 Your role is to analyse RSS feed notifications and extract structured maritime incident information.
 ```
 
-- **Max Iterations:** `15`
+### Language Model input connection
 
-### Agent input connection
-
-Connect the `Prompt` output from **Prompt Template** into the **Input** on **Agent**.
+Connect the `Prompt` output from **Prompt Template** into the **Input** on **Language Model**.
 
 ### Why this configuration works
 
 - The model receives the fully rendered prompt plus RSS content
-- The instructions reinforce the extraction role
-- Higher iteration count gives the agent room to complete the task reliably
+- The system message reinforces the extraction role
 
 ---
 
 ## 💬 Step 6: Connect Chat Output
 
-Connect the `Response` output from **Agent** to **Chat Output**.
+Connect the `Response` output from **Language Model** to **Chat Output**.
 
 This lets you test the flow directly inside Langflow and inspect the returned JSON.
 
@@ -267,7 +266,7 @@ Run the flow and verify the following:
 - The Python block successfully fetches the RSS feed
 - The Type Convert block passes a message downstream
 - The Prompt Template receives the `rss_feed` variable correctly
-- The Agent returns valid JSON
+- The Language Model returns valid JSON
 - The Chat Output displays extracted incident data
 
 ---
