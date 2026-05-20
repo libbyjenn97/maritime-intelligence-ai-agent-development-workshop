@@ -229,6 +229,10 @@ Use the prompt template output as the language model input.
 ```text
 Your role is to analyse RSS feed notifications and extract structured maritime incident information.
 ```
+- **Max Tokens:** Click on the Language Model block to open the right sidebar, then set the max tokens to `8192` (the maximum for this model).
+
+![Update Tokens](images/chapter-3/update_tokens.png)
+
 
 ### Language Model input connection
 
