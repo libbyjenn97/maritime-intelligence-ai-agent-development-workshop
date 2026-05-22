@@ -136,6 +136,9 @@ Run the workflow to see the result - you should see a successful HTTP status suc
 
 The Python Interpreter output needs to be converted into a message before it can be injected cleanly into the prompt workflow.
 
+1. Search for "type convert" in the block search bar
+2. Drag and drop the Type Convert block onto the screen after the Python Interpreter block
+
 ### Configuration
 
 - **Input:** Connect from Python Interpreter `Results`
@@ -151,6 +154,9 @@ This makes the Python output compatible with the variable input expected by the 
 ---
 
 ## 🧠 Step 4: Configure the Prompt Template Block
+
+1. Search for "prompt template" in the block search bar
+2. Drag and drop the Prompt Template block onto the screen after the Type Convert block
 
 Create a prompt template with one dynamic variable:
 
@@ -213,9 +219,18 @@ Output json array object only with no backticks no explanation:
 - Defines the expected schema
 - Passes live RSS content through the `{rss_feed}` variable
 
+### Connect the blocks
+
+Connect the `Message Output` from the **Type Convert** block to the `rss_feed` variable input on the **Prompt Template** block.
+
+![Prompt Template Connection](images/chapter-3/prompt-template-connection.png)
+
 ---
 
 ## 🤖 Step 5: Configure the Language Model Block
+
+1. Search for "language model" in the block search bar
+2. Drag and drop the Language Model block onto the screen after the Prompt Template block
 
 Use the prompt template output as the language model input.
 
@@ -223,46 +238,30 @@ Use the prompt template output as the language model input.
 
 ### Language Model settings
 
-- **Model:** `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
-- **System Message:**
+1. Under **Language Model**, select **Setup Provider**
+2. Select **IBM WatsonX**
+3. In the **API Key** and **Project ID** fields, input anything for now (we will change that later)
+4. Select the **us-south.ml.cloud.ibm.com** endpoint URL
+5. Click **Save**
+
+![WatsonX Configuration](images/chapter-3/watsonx-configuration.png)
+
+6. Make sure the toggle for the **meta-llama/llama-4-maverick-17b-128e-instruct-fp8** model is turned on
+7. In the top right hand corner, in the Language Model box:
+   - Deselect the **WATSONX_APIKEY**
+   - Click the globe icon and select **watsonx_apikey** (this is a variable we created earlier for the workshop)
+   - Do the same for **watsonx Project ID** and select **watsonx_project_id**
+8. Set the **Max Tokens** to `8192`
+9. In the Language Model box in the canvas, change the **Language Model** to `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
+
+![Language Model Final Configuration](images/chapter-3/language-model-final.png)
+
+10. Configure the following settings:
+   - **System Message:**
 
 ```text
 Your role is to analyse RSS feed notifications and extract structured maritime incident information.
 ```
-
-#### If the model is not appearing:
-
-1. Click on the Language Model block
-2. Select **Manage Model Providers**
-
-![Manage Providers](images/chapter-3/manage_providers.png)
-
-3. Select **IBM WatsonX**
-4. Scroll down to find `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
-5. Check the box to enable it
-
-![Add Model](images/chapter-3/add_model.png)
-
-#### First-time setup (if this is your first Language Model block):
-
-Click on the Language Model block to configure:
-
-1. **API Key:** Add the IBM Cloud API key you created during setup
-2. **Project ID:** Add your watsonx.ai project ID
-3. **Max Tokens:** Set to `8192`
-
-![Add API Key, Project ID and Max Tokens](images/chapter-3/add_api_key_and_token_limit.png)
-
-#### If you've already configured a Language Model block:
-
-Click on the Language Model block and update the max tokens to `8192`.
-
-![Update Max Tokens](images/chapter-3/update_tokens.png)
-
-
-### Language Model input connection
-
-Connect the `Prompt` output from **Prompt Template** into the **Input** on **Language Model**.
 
 ### Why this configuration works
 
@@ -272,6 +271,9 @@ Connect the `Prompt` output from **Prompt Template** into the **Input** on **Lan
 ---
 
 ## 💬 Step 6: Connect Chat Output
+
+1. Search for "chat output" in the block search bar
+2. Drag and drop the Chat Output block onto the canvas after the Language Model block
 
 Connect the `Response` output from **Language Model** to **Chat Output**.
 ![Chat Output Block](images/chapter-3/output_block.png)
@@ -325,13 +327,72 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 
 ![Copy MCP Link](images/chapter-3/copy_mcp_link.png)
 
-### 8.2: Add MCP Server to Orchestrate
+### 8.2: Create Agent via wxO ADK and Add MCP Server
 
-1. Go back to your watsonx Orchestrate main pagem click on the top left hamburger menu '☰', then click on 'Build'
+#### 8.2.1: Create a New Agent using Bob
+
+1. Open Bob (your AI assistant) and switch to Code mode if not already in it
+2. Ask Bob to create a new agent using the wxO ADK with the following prompt:
+
+```text
+Using the wxO ADK, create a new agent called "Maritime RSS Intelligence Agent" with the following specifications:
+- Description: "An AI agent that fetches and analyzes maritime news from RSS feeds"
+- Instructions: "You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyze incidents, and provide structured summaries with key insights about maritime security, safety, and operational events."
+- Model: Use the default model
+```
+
+3. Bob will create the agent using the ADK. Wait for confirmation that the agent has been created successfully.
+#### 8.2.2: Push Agent to wxO via ADK CLI
+
+After Bob creates the agent locally, you need to import it to watsonx Orchestrate using the ADK CLI:
+
+1. **Verify Bob created the agent YAML file:**
+   
+   Bob should have created a file named `maritime_rss_intelligence_agent.yaml` (or similar) in your workspace directory.
+   
+   List your files to confirm:
+   ```bash
+   ls *.yaml
+   ```
+
+2. **Import the agent using the ADK CLI:**
+   
+   ```bash
+   orchestrate agents import -f maritime_rss_intelligence_agent.yaml
+   ```
+   
+   **Command flags explained:**
+   - `-f` or `--file`: Path to the agent configuration YAML file
+   
+   **Success message:**
+   ```
+   Agent 'maritime_rss_intelligence_agent' imported successfully
+   ```
+   
+   Or if updating an existing agent:
+   ```
+   Existing Agent 'maritime_rss_intelligence_agent' found. Updating...
+   [INFO] - Agent 'maritime_rss_intelligence_agent' updated successfully
+   ```
+
+3. **Verify the agent was imported:**
+   
+   ```bash
+   orchestrate agents list | grep maritime_rss_intelligence_agent
+   ```
+   
+   You should see your agent listed with its details.
+
+
+#### 8.2.2: Add MCP Server Tool via wxO UI
+
+Now that Bob has created the agent, let's add the Langflow MCP server as a tool through the watsonx Orchestrate UI:
+
+1. Go back to your watsonx Orchestrate main page, click on the top left hamburger menu '☰', then click on 'Build'
 
 ![alt text](<images/chapter-3/wxo build.png>)
 
-2. Select the agent you created earlier in Chapter 1
+2. Select the "Maritime RSS Intelligence Agent" you just created with Bob
 
 ![alt text](images/chapter-3/2-wxo-select-agent.png)
 
@@ -351,16 +412,16 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 
 ![alt text](images/chapter-3/6-add-mcp-2.png)
 
-7. 
+7.
 - Provide a unique name `Maritime_RSS_Fetch_MCP`
 - Description (Optional) `A MCP Server for fetching news from maritime RSS feeds.`
-- Provide MCP server URL you generated from Step 8, an example is: `https://langflow.29uxiijrzw1g.us-south.codeengine.appdomain.cloud/api/v1/mcp/project/4e43d1b2-0e50-4f58-a504-8fd18d9e6b52/streamable`
+- Provide MCP server URL you generated from Step 8.1, an example is: `https://langflow.29uxiijrzw1g.us-south.codeengine.appdomain.cloud/api/v1/mcp/project/4e43d1b2-0e50-4f58-a504-8fd18d9e6b52/streamable`
 
-Leave everything else as deafault And then click on 'Connect'
+Leave everything else as default and then click on 'Connect'
 
 ![alt text](images/chapter-3/7-conenct.png)
 
-8. Select the Lanflow that you have built then click on 'Add to Agent'
+8. Select the Langflow flow that you have built then click on 'Add to Agent'
 
 ![alt text](images/chapter-3/8-select-flow.png)
 
@@ -385,7 +446,7 @@ Leave everything else as deafault And then click on 'Connect'
 
 ![alt text](images/chapter-3/12-show-analysis.png)
 
-Congratulations! You have completed Chapter 3 handson activity!
+🎉 **Congratulations!** You have successfully completed the Chapter 3 hands-on activity!
 
 ---
 
