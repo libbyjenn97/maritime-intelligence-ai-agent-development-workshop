@@ -240,18 +240,18 @@ Use the prompt template output as the language model input.
 
 1. Under **Language Model**, select **Setup Provider**
 2. Select **IBM WatsonX**
-3. In the **API Key** and **Project ID** fields, input anything for now (we will change that later)
-4. Select the **us-south.ml.cloud.ibm.com** endpoint URL
-5. Click **Save**
+3. In the **API Key** field, input the API Key you created earlier
+4. In the **Project ID** field, input: `d217e6b9-c3f8-4db6-a67d-05da7ee22435`
+5. Select the **us-south.ml.cloud.ibm.com** endpoint URL
+6. Click **Save**
 
 ![WatsonX Configuration](images/chapter-3/watsonx-configuration.png)
 
-6. Make sure the toggle for the **meta-llama/llama-4-maverick-17b-128e-instruct-fp8** model is turned on
-7. In the top right hand corner, in the Language Model box:
-   - Deselect the **WATSONX_APIKEY**
-   - Click the globe icon and select **watsonx_apikey** (this is a variable we created earlier for the workshop)
-   - Do the same for **watsonx Project ID** and select **watsonx_project_id**
-8. Set the **Max Tokens** to `8192`
+7. Make sure the toggle for the **meta-llama/llama-4-maverick-17b-128e-instruct-fp8** model is turned on
+
+![Maverick Toggle](images/chapter-3/maverick_toggle.png)
+
+8. In the top right hand corner, in the Language Model box, Set the **Max Tokens** to `8192`
 9. In the Language Model box in the canvas, change the **Language Model** to `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
 
 ![Language Model Final Configuration](images/chapter-3/language-model-final.png)
@@ -337,7 +337,7 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 ```text
 Using the wxO ADK, create a new agent called "Maritime RSS Intelligence Agent" with the following specifications:
 - Description: "An AI agent that fetches and analyzes maritime news from RSS feeds"
-- Instructions: "You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyze incidents, and provide structured summaries with key insights about maritime security, safety, and operational events."
+- Instructions: "You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyze incidents, and provide structured summaries with key insights about maritime security, safety, and operational events. When tools are available, use them to gather information."
 - Model: Use the default model
 ```
 
@@ -438,11 +438,24 @@ Leave everything else as default and then click on 'Connect'
 
 ![alt text](images/chapter-3/10-test-with-prompt-1.png)
 
-4. Click on 'Show Reasoning' to show the throught processes from the Watsoonx ORchestrate agent and we can see that it leveraged the MCP tool you have built. This is ver useful in debugging and it shows the agent chain of thought. Click on 'Step 1' to see the input and output to the tool and click on 'show more' to see the entire output from the langflow mcp server.
+4. Click on 'Show Reasoning' to show the thought processes from the watsonx Orchestrate agent and we can see that it leveraged the MCP tool you have built. This is very useful in debugging and it shows the agent chain of thought. Click on 'Step 1' to see the input and output to the tool and click on 'show more' to see the entire output from the langflow mcp server.
 
 ![alt text](images/chapter-3/11-show-reasoning.png)
 
-5. Scroll to he bottom of the chat to see analysis. Notice that it can be quite generic but it can be tailored to be more specific by making changes to agent's behaviour.
+   **Troubleshooting:** If there is no reasoning shown or the agent didn't call the Maritime RSS tool to fetch the RSS feeds, you need to update the agent's behavior:
+   
+   a. Scroll down to the **Behaviour** section in the agent configuration
+   
+   b. Add this line to the end of the **Behavior Instructions**:
+   ```
+   IMPORTANT: You MUST use the available MCP tools to fetch real-time data. When asked about maritime news or RSS feeds, always call the Maritime RSS Fetch tool first before providing any analysis or response.
+   ```
+   
+   c. In the top right of the chat window, click the **Reset chat** arrow
+   
+   d. Try asking the question again: "What are the latest maritime news updates?"
+
+5. Scroll to the bottom of the chat to see analysis. Notice that it can be quite generic but it can be tailored to be more specific by making changes to agent's behaviour.
 
 ![alt text](images/chapter-3/12-show-analysis.png)
 
