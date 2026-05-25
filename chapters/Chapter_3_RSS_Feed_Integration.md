@@ -444,10 +444,10 @@ After Bob creates the agent locally, you need to import it to watsonx Orchestrat
    [INFO] - Agent 'ES_Maritime_RSS_Intelligence_Agent' updated successfully
    ```
 
-4. **Verify the agent was imported:**
+4. **Verify the agent was imported (replace with your initials):**
    
    ```bash
-   orchestrate agents list | grep Maritime_RSS_Intelligence_Agent
+   orchestrate agents list | grep ES                                    
    ```
    
    You should see your agent listed with your initials in the name.
