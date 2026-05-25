@@ -368,10 +368,12 @@ Before creating the agent, ensure your watsonx Orchestrate environment is active
 2. Ask Bob to create a new agent using the wxO ADK with the following prompt:
 
 ```text
-Using the wxO ADK, create a new agent called "Maritime RSS Intelligence Agent" with the following specifications:
+Using the wxO ADK (ibm-watsonx-orchestrate), create a new agent called "Maritime_RSS_Intelligence_Agent" with the following specifications:
 - Description: "An AI agent that fetches and analyses maritime news from RSS feeds"
 - Instructions: "You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyse incidents, and provide structured summaries with key insights about maritime security, safety, and operational events. When tools are available, use them to gather information."
 - Model: Use the default model
+- spec_version: v1
+- Single file: maritime-rss-intelligence-agent.yaml adk-project/{agents,tools,knowledge,flows}
 ```
 
 3. Bob will create the agent using the ADK. Wait for confirmation that the agent has been created successfully.
@@ -379,7 +381,7 @@ Using the wxO ADK, create a new agent called "Maritime RSS Intelligence Agent" w
 
 After Bob creates the agent locally, you need to import it to watsonx Orchestrate using the ADK CLI:
 
-1. **Verify Bob created the agent YAML file:**
+1. **Locate the agent YAML file Bob created:**
    
    Bob should have created a file named `maritime_rss_intelligence_agent.yaml` (or similar) in your workspace directory.
    
@@ -387,9 +389,43 @@ After Bob creates the agent locally, you need to import it to watsonx Orchestrat
    ```bash
    ls *.yaml
    ```
-
-2. **Import the agent using the ADK CLI:**
    
+   Or search in common locations:
+   ```bash
+   ls ./adk-project/agents/*.yaml
+   ```
+
+2. **Review and personalise the agent configuration:**
+   
+   Open the YAML file and verify it looks similar to this:
+   
+   ```yaml
+   spec_version: v1
+   name: Maritime_RSS_Intelligence_Agent
+   description: An AI agent that fetches and analyses maritime news from RSS feeds
+   instructions: |
+     You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyse incidents, and provide structured summaries with key insights about maritime security, safety, and operational events. When tools are available, use them to gather information.
+   model:
+     provider: default
+     name: default
+   ```
+   
+   **Important:** Add your initials to the agent name to distinguish it from others:
+   ```yaml
+   name: ES_Maritime_RSS_Intelligence_Agent
+   ```
+   Replace `ES` with your own initials (e.g., `JD_Maritime_RSS_Intelligence_Agent`).
+
+3. **Import the agent using the ADK CLI:**
+   
+   The import command depends on where Bob placed the file:
+   
+   **If in the adk-project/agents directory:**
+   ```bash
+   orchestrate agents import -f ./adk-project/agents/maritime_rss_intelligence_agent.yaml
+   ```
+   
+   **If in the root workspace directory:**
    ```bash
    orchestrate agents import -f maritime_rss_intelligence_agent.yaml
    ```
@@ -399,22 +435,22 @@ After Bob creates the agent locally, you need to import it to watsonx Orchestrat
    
    **Success message:**
    ```
-   Agent 'maritime_rss_intelligence_agent' imported successfully
+   Agent 'ES_Maritime_RSS_Intelligence_Agent' imported successfully
    ```
    
    Or if updating an existing agent:
    ```
-   Existing Agent 'maritime_rss_intelligence_agent' found. Updating...
-   [INFO] - Agent 'maritime_rss_intelligence_agent' updated successfully
+   Existing Agent 'ES_Maritime_RSS_Intelligence_Agent' found. Updating...
+   [INFO] - Agent 'ES_Maritime_RSS_Intelligence_Agent' updated successfully
    ```
 
-3. **Verify the agent was imported:**
+4. **Verify the agent was imported:**
    
    ```bash
-   orchestrate agents list | grep maritime_rss_intelligence_agent
+   orchestrate agents list | grep Maritime_RSS_Intelligence_Agent
    ```
    
-   You should see your agent listed with its details.
+   You should see your agent listed with your initials in the name.
 
 
 #### 8.2.2: Add MCP Server Tool via wxO UI
