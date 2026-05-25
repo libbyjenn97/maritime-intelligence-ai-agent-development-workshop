@@ -1,4 +1,4 @@
-# Chapter 2 Part A: Weather Tool with IBM Bob
+# Chapter 2: Weather Tool with IBM Bob
 
 **Time:** 1:00 PM - 1:25 PM (25 minutes)
 **Goal:** Use IBM Bob to generate a complete weather intelligence tool
@@ -96,20 +96,20 @@ Before we start generating code, let's create a dedicated folder for all worksho
 
 2. Navigate to your **Documents** folder
 
-3. Create a new folder called **`NZDF_Agentic_AI_Workshop`**
+3. Create a new folder called **`Maritime_Agentic_AI_Workshop`**
    - Right-click in the Documents folder
    - Select "New Folder" (or equivalent for your OS)
    
    ![Creating a new folder](./images/chapter-2/create-folder.png)
    
-   - Name it: `NZDF_Agentic_AI_Workshop`
+   - Name it: `Maritime_Agentic_AI_Workshop`
    
    ![Folder created](./images/chapter-2/folder-created.png)
 
 4. Open this folder in Bob by selecting it and clicking "Open"
 
 **What this creates:**
-- Location: `Documents/NZDF_Agentic_AI_Workshop/`
+- Location: `Documents/Maritime_Agentic_AI_Workshop/`
 - Purpose: Store all code, configurations, and files from the workshop
 - Structure: We'll organise files by chapter as we progress
 
@@ -513,7 +513,7 @@ Now let's create an agent that uses our new tool!
 ```bash
 orchestrate agents create \
   --name maritime_weather_agent \
-  --description "AI agent for maritime weather intelligence for NZDF operations" \
+  --description "AI agent for maritime weather intelligence for operations" \
   --tools getWeatherForecast
 ```
 
@@ -543,7 +543,7 @@ spec_version: v1
 kind: native
 name: maritime_weather_agent
 display_name: maritime_weather_agent
-description: "AI agent for maritime weather intelligence for NZDF operations"
+description: "AI agent for maritime weather intelligence for operations"
 llm: groq/openai/gpt-oss-120b
 style: default
 hide_reasoning: false
@@ -561,7 +561,7 @@ context_variables: []
 
 Replace [INSTRUCTIONS GO HERE] with these instructions:
 
-You are a maritime weather intelligence assistant for NZDF operations.
+You are a maritime weather intelligence assistant for operations.
 
 Use getWeatherForecast to get weather data for locations.
 
@@ -633,7 +633,7 @@ Existing Agent 'maritime_weather_agent' found. Updating...
 
 4. **Select the `maritime_weather_agent`** from the agents list
 
-5. **Scroll down or click on the "Behaviour" tab** on the left-hand side
+5. **Scroll down or click on the "Behavior" tab** on the left-hand side
 
 6. **Verify that the instructions have been updated** with the weather code interpretation rules
 
@@ -761,12 +761,12 @@ If you encountered issues with Bob generating the code, you can use the pre-made
 **Option 1: Copy files using Bob**
 1. In Bob, navigate to `GitHub_Bootcamp_Guide/assets/chapter-2/`
 2. Open both files
-3. Copy each file to your workshop folder: `~/Documents/NZDF_Agentic_AI_Workshop/`
+3. Copy each file to your workshop folder: `~/Documents/Maritime_Agentic_AI_Workshop/`
 
 **Option 2: Copy files using command line**
 ```bash
 # Navigate to your workshop folder
-cd ~/Documents/NZDF_Agentic_AI_Workshop
+cd ~/Documents/Maritime_Agentic_AI_Workshop
 
 # Copy both pre-made files
 cp /path/to/GitHub_Bootcamp_Guide/assets/chapter-2/weather_forecast_tool.py .

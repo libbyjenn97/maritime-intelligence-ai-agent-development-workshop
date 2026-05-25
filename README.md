@@ -37,19 +37,70 @@ By the end of this workshop, you will:
 
 ## 📋 Workshop Schedule
 
-| Time | Duration | Chapter | Description |
-|------|----------|---------|-------------|
-| 10:00 - 10:15 | 15 min | **Introductions** | Introductions & name tags |
-| 10:15 - 10:45 | 30 min | **Agenda & Use Cases** | Workshop agenda, objectives, and maritime intelligence use cases |
-| 10:45 - 11:15 | 30 min | **[Chapter 0: Environment Setup](./chapters/Chapter_0_Environment_Setup.md)** | Technical setup (Orchestrate, Langflow, Bob) |
-| 11:15 - 11:45 | 30 min | **Agentic AI Concepts** | Core concepts and capabilities |
-| **11:45 - 12:15** | **30 min** | **[Chapter 1: Your First AI Assistant](./chapters/Chapter_1_Your_First_AI_Assistant.md)** | Simple document Q&A with Orchestrate |
-| 12:15 - 1:00 | 45 min | **Lunch break** | Break |
-| **1:00 - 2:15** | **75 min** | **[Chapter 2: Document Analysis Agent](./chapters/Chapter_2_Document_Analysis_Agent.md)** | Build weather tool with Bob |
-| 2:15 - 2:30 | 15 min | **Afternoon break** | Break |
-| 2:30 - 3:15 | 45 min | **[Chapter 3: RSS Feed Integration](./chapters/Chapter_3_RSS_Feed_Integration.md)** | Langflow RSS feed extraction |
-| 3:15 - 3:30 | 15 min | **[Chapter 4: Visualisation](./chapters/Chapter_4_Visualisation_with_Bob.md)** | Bob-generated dashboards |
-| 3:30 - 4:30 | 1h | **Wrap-up & Planning** | Pressure test, discovery workshop |
+### PART A: WELCOME
+
+#### Welcome | 45 minutes
+| Time | Activity |
+|------|----------|
+| 10:00 - 10:15 | **Introductions** |
+| 10:15 - 10:30 | **Agenda Overview** |
+| 10:30 - 10:45 | **Use Case Discussion** |
+
+#### Setup | 60 minutes
+| Time | Activity |
+|------|----------|
+| 10:45 - 11:15 | **[Chapter 0: Technical Setup](./chapters/Chapter_0_Environment_Setup.md)** |
+| 11:15 - 11:45 | **Agentic AI Concepts** |
+
+---
+
+### PART B: HANDS-ON
+
+#### Build Chapter 1 | 15 minutes
+| Time | Activity |
+|------|----------|
+| 11:45 - 12:00 | **[Chapter 1: Build an AI Assistant with Orchestrate](./chapters/Chapter_1_Build_an_AI_Assistant_with_Orchestrate.md)** |
+
+#### Lunch | 1 Hour 🍽️
+| Time | Activity |
+|------|----------|
+| 12:00 - 1:00 | **Lunch time** |
+
+#### Build Chapter 2 | 30 minutes
+| Time | Activity |
+|------|----------|
+| 1:00 - 1:30 | **[Chapter 2: Weather Tool with Bob](./chapters/Chapter_2_Weather_Tool_with_IBM_Bob.md)** |
+
+#### Break | 15 minutes ☕
+| Time | Activity |
+|------|----------|
+| 1:30 - 1:45 | **Coffee break** |
+
+#### Build Chapter 3 | 45 minutes
+| Time | Activity |
+|------|----------|
+| 1:45 - 2:30 | **[Chapter 3: News Feed Integration with Langflow](./chapters/Chapter_3_RSS_Feed_Integration.md)** |
+
+#### Build Chapter 4 | 30 minutes
+| Time | Activity |
+|------|----------|
+| 2:30 - 3:00 | **[Chapter 4: Visualisation with Bob](./chapters/Chapter_4_Visualisation_with_Bob.md)** |
+
+#### Break | 15 minutes ☕
+| Time | Activity |
+|------|----------|
+| 3:00 - 3:15 | **Coffee break** |
+
+---
+
+### PART C: Close
+
+#### Big Picture, Next Steps
+| Time | Activity |
+|------|----------|
+| 3:15 - 3:45 | **Playback & retro** |
+| 3:45 - 4:15 | **Discovery** |
+| 4:15 - 4:30 | **Next steps** |
 
 ---
 
@@ -60,8 +111,8 @@ maritime-intelligence-ai-agent-development-workshop/
 ├── README.md                                    # This file
 ├── chapters/                                    # Workshop chapters
 │   ├── Chapter_0_Environment_Setup.md          # Environment setup
-│   ├── Chapter_1_Your_First_AI_Assistant.md    # Chapter 1 guide
-│   ├── Chapter_2_Document_Analysis_Agent.md    # Chapter 2 guide
+│   ├── Chapter_1_Build_an_AI_Assistant_with_Orchestrate.md  # Chapter 1 guide
+│   ├── Chapter_2_Weather_Tool_with_IBM_Bob.md  # Chapter 2 guide
 │   ├── Chapter_3_RSS_Feed_Integration.md       # Chapter 3 guide
 │   ├── Chapter_4_Visualisation_with_Bob.md     # Chapter 4 guide
 │   ├── assets/                                  # Sample data and files
@@ -96,7 +147,6 @@ This workshop material is provided for educational purposes for workshop personn
 For questions about this workshop:
 - **Email:** libbyjen@nz1.ibm.com
 - **Workshop Date:** May 26, 2026
-- **Location:** [To be confirmed]
 
 ---
 
