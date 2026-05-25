@@ -330,6 +330,38 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 
 ### 8.2: Create Agent via wxO ADK and Add MCP Server
 
+#### 8.2.0: Verify Your Orchestrate Environment
+
+Before creating the agent, ensure your watsonx Orchestrate environment is active.
+
+1. **Check your active environment:**
+   ```bash
+   orchestrate env list
+   ```
+
+2. **Look for your environment in the output:**
+   - If you followed Chapter 2, you should see an environment named `workshop` (or whatever name you chose)
+   - The active environment will be marked with an asterisk (*)
+
+3. **If your environment is not active, activate it:**
+   ```bash
+   orchestrate env activate workshop
+   ```
+   
+   **Success message:**
+   ```
+   [INFO] - Environment 'workshop' is now active
+   ```
+
+4. **If you don't see any environment listed:**
+   - You need to create one first
+   - Refer back to **Chapter 2, Step 4 (items 7-9)** for detailed instructions on creating an environment
+   - Use the command:
+     ```bash
+     orchestrate env add --name workshop -u https://api.watsonx-orchestrate.ibm.com/v1 --type ibm_iam --activate
+     ```
+   - Replace `workshop` with your preferred environment name if desired
+
 #### 8.2.1: Create a New Agent using Bob
 
 1. Open Bob (your AI assistant) and switch to Code mode if not already in it
