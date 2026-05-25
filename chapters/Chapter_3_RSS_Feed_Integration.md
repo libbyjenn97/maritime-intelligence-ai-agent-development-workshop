@@ -511,7 +511,7 @@ Leave everything else as default and then click on 'Connect'
 
 ![alt text](images/chapter-3/11-show-reasoning.png)
 
-   **Troubleshooting:** If there is no reasoning shown or the agent didn't call the Maritime RSS tool to fetch the RSS feeds, you need to update the agent's behavior:
+   **Troubleshooting:** If there is no reasoning shown or the agent didn't call the Maritime RSS tool to fetch the RSS feeds, you need to update the agent's behaviour:
    
    a. Scroll down to the **Behaviour** section in the agent configuration
    

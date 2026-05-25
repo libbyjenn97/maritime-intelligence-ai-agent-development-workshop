@@ -183,7 +183,7 @@ To see how the agent orchestrates sub-agents:
 
 **With Master Agent:**
 - Single prompt to generate comprehensive report: 2 minutes
-- Review and customize: 3 minutes
+- Review and customise: 3 minutes
 - **Total: 5 minutes per report**
 
 **Result: 72x faster intelligence reporting!**
@@ -328,7 +328,7 @@ You've successfully completed Chapter 4 if:
 ### watsonx Orchestrate
 - Advanced agent configuration
 - Tool integration patterns
-- Performance optimization
+- Performance optimisation
 - Security and access control
 
 ---
@@ -420,7 +420,7 @@ REQUIREMENTS:
    - Pause/resume rotation
    - Quick zoom to key areas (Gulf of Aden, Somalia Coast, Bab al-Mandeb)
    - Reset view button
-6. Use a dark theme suitable for operations centers
+6. Use a dark theme suitable for operations centres
 7. Add tooltips that appear on hover with incident details
 
 TECHNICAL SPECIFICATIONS:
@@ -500,7 +500,7 @@ Ask Bob to modify the visualisation:
 ```
 Can you update the globe to:
 - Make piracy incidents show as red pulsing markers
-- Add a legend showing what each color/icon means
+- Add a legend showing what each colour/icon means
 - Include a timeline slider to show incidents over time
 - Add naval patrol routes as animated lines
 - Make the weather overlay semi-transparent
@@ -586,7 +586,7 @@ Based on your sample report, Bob might create:
 4. **Print-friendly** - Generate static images for printed reports
 
 #### For Operations Centres
-1. **Large display optimization** - Scale UI for 4K/8K displays
+1. **Large display optimisation** - Scale UI for 4K/8K displays
 2. **Auto-refresh** - Update with new intelligence automatically
 3. **Multi-monitor support** - Globe on one screen, details on another
 4. **Integration** - Embed in existing command & control dashboards
