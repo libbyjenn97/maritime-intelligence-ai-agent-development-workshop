@@ -84,7 +84,7 @@ By the end of this workshop, you will:
 #### Build Chapter 4 | 30 minutes
 | Time | Activity |
 |------|----------|
-| 2:30 - 3:00 | **[Chapter 4: Visualisation with Bob](./chapters/Chapter_4_Visualisation_with_Bob.md)** |
+| 2:30 - 3:00 | **[Chapter 4: Master Intelligence Agent & Unified Reporting](./chapters/Chapter_4_Visualisation_with_Bob.md)** |
 
 #### Break | 15 minutes ☕
 | Time | Activity |

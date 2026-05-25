@@ -20,7 +20,7 @@ By the end of this chapter, you will:
 ## 📖 What We're Building
 
 A **Master Maritime Intelligence Agent** that:
-- Orchestrates all your specialized agents (Document Q&A, Weather, RSS News)
+- Orchestrates all your specialised agents (Document Q&A, Weather, RSS News)
 - Collects intelligence from multiple sources simultaneously
 - Synthesizes information into a unified report
 - Generates executive-ready briefings
@@ -81,7 +81,7 @@ You are the Master Maritime Intelligence Coordinator for naval operations.
 Your role is to:
 1. Coordinate multiple intelligence sources simultaneously
 2. Gather information from document analysis, weather forecasts, and news monitoring
-3. Synthesize all intelligence into a comprehensive briefing
+3. Synthesise all intelligence into a comprehensive briefing
 4. Present findings in a clear, actionable format for decision-makers
 
 When generating reports, always include:
@@ -92,7 +92,7 @@ When generating reports, always include:
 - Recommendations (actionable intelligence)
 - Confidence Levels (for each intelligence source)
 
-Format all reports professionally with clear sections and prioritize 
+Format all reports professionally with clear sections and prioritise
 critical information for rapid decision-making.
 ```
 
@@ -142,7 +142,7 @@ Watch as the Master Agent:
 2. **Calls** the Document Q&A Agent for threat intelligence
 3. **Calls** the Weather Agent for environmental conditions
 4. **Calls** the RSS News Agent for current events
-5. **Synthesizes** all information into a unified report
+5. **Synthesises** all information into a unified report
 
 #### 4.3 Review the Generated Report
 
@@ -151,7 +151,7 @@ The Master Agent should produce a structured report with:
 - ✅ Threat assessment from historical documents
 - ✅ Weather forecast and operational impact
 - ✅ Latest news and incidents
-- ✅ Synthesized recommendations
+- ✅ Synthesised recommendations
 
 #### 4.4 Enable "Show Reasoning" (Optional)
 
@@ -160,7 +160,7 @@ To see how the agent orchestrates sub-agents:
 2. Observe the agent's decision-making process:
    - Which sub-agents it calls
    - What questions it asks each agent
-   - How it synthesizes responses
+   - How it synthesises responses
 
 ---
 
@@ -169,7 +169,7 @@ To see how the agent orchestrates sub-agents:
 ### The Power of Agent Orchestration
 
 **What You've Achieved:**
-- Created a **master orchestration layer** over specialized agents
+- Created a **master orchestration layer** over specialised agents
 - Enabled **multi-source intelligence fusion** automatically
 - Built a **scalable architecture** (easy to add more agents)
 - Demonstrated **agent composition** patterns
@@ -177,7 +177,7 @@ To see how the agent orchestrates sub-agents:
 **Traditional Approach:**
 - Manual data collection from multiple systems: 2 hours
 - Copy/paste information into report template: 1 hour
-- Cross-reference and synthesize: 2 hours
+- Cross-reference and synthesise: 2 hours
 - Format and review: 1 hour
 - **Total: 6 hours per report**
 
@@ -222,7 +222,7 @@ To see how the agent orchestrates sub-agents:
 - **Solution:** Refine the master agent's instructions to be more specific
 - **Solution:** Use a more structured prompt template
 
-**Issue:** Sub-agent responses are not synthesized well
+**Issue:** Sub-agent responses are not synthesised well
 - **Solution:** Add explicit synthesis instructions to the master agent
 - **Solution:** Ask the master agent to "correlate findings across sources"
 
@@ -240,7 +240,7 @@ You've successfully completed Chapter 4 if:
 - ✅ All three sub-agents connected as tools
 - ✅ Generated a comprehensive intelligence report
 - ✅ Report includes data from all sources
-- ✅ Information is properly synthesized
+- ✅ Information is properly synthesised
 - ✅ Report is executive-ready and actionable
 
 ---
@@ -255,7 +255,7 @@ You've successfully completed Chapter 4 if:
 - Social media monitoring agent
 - Cyber threat intelligence agent
 
-**Create Specialized Report Types:**
+**Create Specialised Report Types:**
 - Daily intelligence brief (quick summary)
 - Weekly intelligence assessment (trends)
 - Incident-specific deep dive
@@ -294,12 +294,12 @@ You've successfully completed Chapter 4 if:
 ### How This Scales to Production
 
 **Current Workshop Setup:**
-- 3 specialized agents
+- 3 specialised agents
 - 1 master orchestrator
 - Manual report generation
 
 **Production Deployment Could Include:**
-- 10+ specialized intelligence agents
+- 10+ specialised intelligence agents
 - Multiple master agents for different regions
 - Automated scheduled reporting
 - Integration with command & control systems
@@ -350,17 +350,17 @@ You've successfully completed Chapter 4 if:
 ### AI/Agentic Patterns
 - Master-worker agent pattern
 - Tool-calling and delegation
-- Synthesis and summarization
+- Synthesis and summarisation
 - Structured output generation
 
 ---
 
-## 🌍 Optional: Interactive Globe Visualization (Bonus Section)
+## 🌍 Optional: Interactive Globe Visualisation (Bonus Section)
 
 **Time:** 5-10 minutes (Optional)
-**Goal:** Create an interactive 3D globe visualization of your maritime intelligence report
+**Goal:** Create an interactive 3D globe visualisation of your maritime intelligence report
 
-### Why Visualize?
+### Why Visualise?
 
 Intelligence reports are powerful, but **visual representations** can:
 - Provide instant situational awareness at a glance
@@ -376,7 +376,7 @@ An **interactive 3D globe** that displays:
 - 🌊 Weather conditions and sea states
 - ⚓ Naval asset positions
 - 📍 Key maritime chokepoints (Bab al-Mandeb, Gulf of Aden)
-- 🔴 Threat zones with color-coded risk levels
+- 🔴 Threat zones with colour-coded risk levels
 
 ---
 
@@ -397,9 +397,9 @@ An **interactive 3D globe** that displays:
 In Bob's chat interface, paste the following prompt (replace `[YOUR REPORT]` with your actual report):
 
 ```
-I have a maritime intelligence report that I'd like to visualize on an interactive 3D globe.
+I have a maritime intelligence report that I'd like to visualise on an interactive 3D globe.
 
-Please create a SINGLE, SELF-CONTAINED HTML file with an interactive globe visualization.
+Please create a SINGLE, SELF-CONTAINED HTML file with an interactive globe visualisation.
 
 REQUIREMENTS:
 1. Use Globe.gl library (https://globe.gl/) - it's reliable and well-documented
@@ -438,7 +438,7 @@ STYLING:
 - Smooth animations and transitions
 - Professional, military-grade aesthetic
 
-Here's the maritime intelligence report to visualize:
+Here's the maritime intelligence report to visualise:
 
 [YOUR REPORT]
 
@@ -449,9 +449,9 @@ Include console.log statements to help debug if needed.
 #### 2.3 Let Bob Work His Magic
 
 Bob will:
-1. **Analyze** your maritime intelligence report
+1. **Analyse** your maritime intelligence report
 2. **Extract** all geographic locations, incidents, and data points
-3. **Design** an appropriate visualization architecture
+3. **Design** an appropriate visualisation architecture
 4. **Generate** a complete HTML file with embedded JavaScript
 5. **Create** an interactive 3D globe with all your intelligence data
 
@@ -459,7 +459,7 @@ Bob will:
 
 ---
 
-### Step 3: View Your Visualization
+### Step 3: View Your Visualisation
 
 #### 3.1 Locate the Generated File
 
@@ -477,7 +477,7 @@ Bob will create a file (typically named something like `maritime_intelligence_gl
 4. Double-click the file to open in your default browser
 
 **Option 2: Use Bob's Preview**
-1. Ask Bob: "Can you open this visualization in a browser preview?"
+1. Ask Bob: "Can you open this visualisation in a browser preview?"
 2. Bob may provide a local server command or preview option
 
 #### 3.3 Interact with Your Globe
@@ -491,11 +491,11 @@ Once opened, you can:
 
 ---
 
-### Step 4: Customize Your Visualization (Optional)
+### Step 4: Customise Your Visualisation (Optional)
 
 #### 4.1 Adjust Visual Elements
 
-Ask Bob to modify the visualization:
+Ask Bob to modify the visualisation:
 
 ```
 Can you update the globe to:
@@ -521,13 +521,13 @@ Please add these additional layers to the globe:
 ```
 Can you add export functionality to:
 - Save the current view as a PNG image
-- Generate a PDF report with the visualization
+- Generate a PDF report with the visualisation
 - Export data as GeoJSON for GIS systems
 ```
 
 ---
 
-### Example Visualization Features
+### Example Visualisation Features
 
 Based on your sample report, Bob might create:
 
@@ -553,11 +553,11 @@ Based on your sample report, Bob might create:
 
 ---
 
-### Best Practices for Globe Visualizations
+### Best Practices for Globe Visualisations
 
 #### Visual Design
-1. **Use a dark theme** - Better for operations centers and reduces eye strain
-2. **Color-code by severity** - Red (critical), Orange (high), Yellow (medium), Green (low)
+1. **Use a dark theme** - Better for operations centres and reduces eye strain
+2. **Colour-code by severity** - Red (critical), Orange (high), Yellow (medium), Green (low)
 3. **Animate important elements** - Pulsing markers for active threats
 4. **Include scale reference** - Distance markers, nautical mile grid
 5. **Add time context** - Show when incidents occurred
@@ -577,7 +577,7 @@ Based on your sample report, Bob might create:
 
 ---
 
-### Sharing Your Visualization
+### Sharing Your Visualisation
 
 #### For Executive Briefings
 1. **Full-screen mode** - Press F11 for immersive presentation
@@ -585,7 +585,7 @@ Based on your sample report, Bob might create:
 3. **Annotation mode** - Draw attention to specific areas during briefing
 4. **Print-friendly** - Generate static images for printed reports
 
-#### For Operations Centers
+#### For Operations Centres
 1. **Large display optimization** - Scale UI for 4K/8K displays
 2. **Auto-refresh** - Update with new intelligence automatically
 3. **Multi-monitor support** - Globe on one screen, details on another
@@ -616,7 +616,7 @@ Based on your sample report, Bob might create:
 - **Solution:** Reduce detail level when zoomed out
 - **Solution:** Use WebGL acceleration if available
 
-**Issue:** Visualization doesn't match report data
+**Issue:** Visualisation doesn't match report data
 - **Solution:** Provide Bob with more specific location details
 - **Solution:** Manually verify extracted coordinates
 - **Solution:** Ask Bob to add a data validation step
@@ -629,7 +629,7 @@ Once you have the basic globe working, consider these advanced features:
 
 #### Real-Time Updates
 ```
-Bob, can you modify the visualization to:
+Bob, can you modify the visualisation to:
 - Poll the Master Agent every 5 minutes for updates
 - Animate new incidents appearing on the globe
 - Show a "last updated" timestamp
@@ -667,15 +667,15 @@ Allow me to load multiple reports and:
 
 ### Success Criteria
 
-You've successfully created the visualization if:
+You've successfully created the visualisation if:
 
 - ✅ Globe loads and is interactive (rotate, zoom, pan)
 - ✅ All major incidents from report are plotted correctly
-- ✅ Markers are color-coded by threat type/severity
+- ✅ Markers are colour-coded by threat type/severity
 - ✅ Tooltips show relevant details on hover
 - ✅ Visual design is professional and operations-ready
 - ✅ Performance is smooth (no lag when interacting)
-- ✅ Visualization enhances understanding of the intelligence
+- ✅ Visualisation enhances understanding of the intelligence
 
 ---
 
@@ -687,7 +687,7 @@ You've successfully created the visualization if:
 - Updating for new intelligence: 20 minutes per update
 - **Total: 95 minutes, static output**
 
-**With Bob's Globe Visualization:**
+**With Bob's Globe Visualisation:**
 - Generate interactive globe: 3 minutes
 - Automatic updates from new reports: Real-time
 - Interactive exploration: Unlimited
@@ -702,14 +702,14 @@ You've successfully created the visualization if:
 **What You've Achieved:**
 - Transformed text-based intelligence into **visual situational awareness**
 - Created an **interactive tool** for exploration and analysis
-- Built a **presentation-ready** visualization for executive briefings
-- Demonstrated **AI-assisted data visualization** capabilities
+- Built a **presentation-ready** visualisation for executive briefings
+- Demonstrated **AI-assisted data visualisation** capabilities
 - Established a **reusable pattern** for future intelligence products
 
-**The Power of AI-Assisted Visualization:**
+**The Power of AI-Assisted Visualisation:**
 - Bob understands your intelligence context
 - Automatically extracts geographic data
-- Chooses appropriate visualization techniques
+- Chooses appropriate visualisation techniques
 - Generates production-ready code
 - Iterates based on your feedback
 

@@ -336,8 +336,8 @@ Now that your Langflow workflow is working, let's make it available as a tool in
 
 ```text
 Using the wxO ADK, create a new agent called "Maritime RSS Intelligence Agent" with the following specifications:
-- Description: "An AI agent that fetches and analyzes maritime news from RSS feeds"
-- Instructions: "You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyze incidents, and provide structured summaries with key insights about maritime security, safety, and operational events. When tools are available, use them to gather information."
+- Description: "An AI agent that fetches and analyses maritime news from RSS feeds"
+- Instructions: "You are a maritime intelligence analyst. Your role is to fetch the latest maritime news from RSS feeds, analyse incidents, and provide structured summaries with key insights about maritime security, safety, and operational events. When tools are available, use them to gather information."
 - Model: Use the default model
 ```
 
