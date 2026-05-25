@@ -480,4 +480,4 @@ After this chapter, you can use the extracted incident JSON in:
 
 ---
 
-[← Back to Chapter 2](./Chapter_2_Document_Analysis_Agent.md) | [Back to Main Guide](../README.md) | [Next: Chapter 4 →](./Chapter_4_Visualisation_with_Bob.md)
+[← Back to Chapter 2](./Chapter_2_Weather_Tool_with_IBM_Bob.md) | [Back to Main Guide](../README.md) | [Next: Chapter 4 →](./Chapter_4_Master_Intelligence_Agent_and_Unified_Reporting.md)

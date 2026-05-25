@@ -84,7 +84,7 @@ By the end of this workshop, you will:
 #### Build Chapter 4 | 30 minutes
 | Time | Activity |
 |------|----------|
-| 2:30 - 3:00 | **[Chapter 4: Master Intelligence Agent & Unified Reporting](./chapters/Chapter_4_Visualisation_with_Bob.md)** |
+| 2:30 - 3:00 | **[Chapter 4: Master Intelligence Agent & Unified Reporting](./chapters/Chapter_4_Master_Intelligence_Agent_and_Unified_Reporting.md)** |
 
 #### Break | 15 minutes ☕
 | Time | Activity |
@@ -114,7 +114,7 @@ maritime-intelligence-ai-agent-development-workshop/
 │   ├── Chapter_1_Build_an_AI_Assistant_with_Orchestrate.md  # Chapter 1 guide
 │   ├── Chapter_2_Weather_Tool_with_IBM_Bob.md  # Chapter 2 guide
 │   ├── Chapter_3_RSS_Feed_Integration.md       # Chapter 3 guide
-│   ├── Chapter_4_Visualisation_with_Bob.md     # Chapter 4 guide
+│   ├── Chapter_4_Master_Intelligence_Agent_and_Unified_Reporting.md     # Chapter 4 guide
 │   ├── assets/                                  # Sample data and files
 │   └── images/                                  # Screenshots and images
 └── reference/                                   # Additional resources (if needed)
