@@ -63,7 +63,7 @@ A **Master Maritime Intelligence Agent** that:
 
 #### 1.2 Configure Master Agent
 
-1. **Name:** `Maritime Intelligence Master Agent`
+1. **Name:** `ES Maritime Intelligence Master Agent` (your initials e.g. ES)
 2. **Description:** 
    ```
    Master orchestration agent that coordinates multiple intelligence sources 
@@ -73,7 +73,7 @@ A **Master Maritime Intelligence Agent** that:
 
 #### 1.3 Set Agent Instructions
 
-In the **Instructions** field, paste:
+In the **Behaviour > Instructions** field, paste:
 
 ```
 You are the Master Maritime Intelligence Coordinator for naval operations.
