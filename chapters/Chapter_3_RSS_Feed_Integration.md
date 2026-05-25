@@ -76,6 +76,7 @@ This creates a linear extraction pipeline from RSS collection through to final s
 
 1. Open Langflow
 2. Create a new blank flow
+3. Set name to [your initials]_maritime_rss_flow (e.g. es_maritime_rss_flow)
 
 ![Create New Flow](images/chapter-3/create_new_flow.png)
 
